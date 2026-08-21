@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "FAST NextClass",
     short_name: "NextClass",
     description: "Your timetable, attendance, and reminders — auto-loaded from your section.",
-    start_url: "/dashboard",
+    start_url: "/",
     display: "standalone",
     background_color: "#0a0a0a",
     theme_color: "#0a0a0a",
@@ -29,3 +29,4 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
   };
 }
+

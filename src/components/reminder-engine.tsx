@@ -1,11 +1,12 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { TimetableEntry } from "@/lib/types";
 import { dayName, timeToMinutes } from "@/lib/next-class-engine";
 
 const PREFS_KEY = "nextclass-reminder-prefs";
 const FIRED_KEY = "nextclass-reminders-fired";
+const REFRESH_MS = 15 * 60_000; // re-pull the timetable every 15 min in case it changed
 
 export interface ReminderPrefsLocal {
   enabled: boolean;
@@ -25,9 +26,37 @@ export function setReminderPrefs(prefs: ReminderPrefsLocal) {
   localStorage.setItem(PREFS_KEY, JSON.stringify(prefs));
 }
 
-/** Mounted once in the dashboard layout; polls every minute for classes about to start. */
-export function ReminderEngine({ entries }: { entries: TimetableEntry[] }) {
+/**
+ * Mounted once in the dashboard layout; polls every minute for classes
+ * about to start. Fetches its own timetable data client-side (rather than
+ * receiving it as a server-fetched prop) so that loading it never blocks
+ * page navigation — this component renders nothing, so there's no reason
+ * for every single dashboard page to wait on a timetable query just to
+ * satisfy it. It refreshes its own copy periodically to pick up schedule
+ * changes without needing a full page reload.
+ */
+export function ReminderEngine() {
   const supabase = useRef(createClient());
+  const [entries, setEntries] = useState<TimetableEntry[]>([]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadEntries() {
+      const { data } = await supabase.current
+        .from("timetable")
+        .select("*, course:courses(*)")
+        .order("start_time");
+      if (!cancelled) setEntries((data as unknown as TimetableEntry[]) ?? []);
+    }
+
+    loadEntries();
+    const refreshId = setInterval(loadEntries, REFRESH_MS);
+    return () => {
+      cancelled = true;
+      clearInterval(refreshId);
+    };
+  }, []);
 
   useEffect(() => {
     const prefs = getReminderPrefs();

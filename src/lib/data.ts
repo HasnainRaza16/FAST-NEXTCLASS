@@ -17,9 +17,12 @@ export const getCurrentUser = cache(fetchCurrentUser);
 
 async function fetchProfile() {
   const supabase = await createClient();
-  const user = await getCurrentUser();
-  if (!user) return null;
-  const { data } = await supabase.from("profiles").select("*").eq("id", user.id).single();
+  // No need to call auth.getUser() first to get an id to filter by: the
+  // "profiles: owner read" RLS policy (auth.uid() = id) already restricts
+  // this select to the caller's own row. Skipping the extra lookup removes
+  // one full network round-trip to Supabase Auth from every page that
+  // fetches the profile — which is nearly every dashboard navigation.
+  const { data } = await supabase.from("profiles").select("*").single();
   return data;
 }
 export const getProfile = cache(fetchProfile);
@@ -75,3 +78,4 @@ async function fetchFeedback(): Promise<FeedbackItem[]> {
   return (data as FeedbackItem[]) ?? [];
 }
 export const getFeedback = cache(fetchFeedback);
+
