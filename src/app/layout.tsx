@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { ServiceWorkerRegister } from "@/components/service-worker-register";
 
 export const metadata: Metadata = {
   title: "FAST NextClass",
@@ -35,7 +36,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="antialiased font-sans">{children}</body>
+      <body className="antialiased font-sans">
+        {children}
+        <ServiceWorkerRegister />
+      </body>
     </html>
   );
 }
+

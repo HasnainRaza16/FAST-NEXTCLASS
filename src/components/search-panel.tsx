@@ -5,6 +5,7 @@ import { Search as SearchIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { TimetableEntry } from "@/lib/types";
+import { minutesToLabel, timeToMinutes } from "@/lib/next-class-engine";
 import { DOT_CLASS } from "@/lib/color-tags";
 import { cn } from "@/lib/utils";
 
@@ -50,7 +51,7 @@ export function SearchPanel({ initialEntries }: { initialEntries: TimetableEntry
                 <div>
                   <p className="font-medium">{e.course?.course_name}</p>
                   <p className="text-sm text-neutral-500">
-                    {e.day} · {e.start_time.slice(0, 5)}–{e.end_time.slice(0, 5)}
+                    {e.day} · {minutesToLabel(timeToMinutes(e.start_time))}–{minutesToLabel(timeToMinutes(e.end_time))}
                     {e.room_number ? ` · ${e.room_number}` : ""}
                     {e.course?.teacher_name ? ` · ${e.course.teacher_name}` : ""}
                   </p>

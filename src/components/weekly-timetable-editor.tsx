@@ -15,6 +15,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import { Course, TimetableEntry, Day, DAYS, COLOR_TAGS, ColorTag } from "@/lib/types";
+import { minutesToLabel, timeToMinutes } from "@/lib/next-class-engine";
 import { DOT_CLASS, TAG_CLASS } from "@/lib/color-tags";
 import { cn } from "@/lib/utils";
 
@@ -346,7 +347,7 @@ export function WeeklyTimetableEditor({
                     </div>
                   </div>
                   <p className="text-xs opacity-80">
-                    {entry.start_time.slice(0, 5)}–{entry.end_time.slice(0, 5)}
+                    {minutesToLabel(timeToMinutes(entry.start_time))}–{minutesToLabel(timeToMinutes(entry.end_time))}
                   </p>
                   {entry.course?.teacher_name && <p className="text-xs opacity-80">{entry.course.teacher_name}</p>}
                   {entry.room_number && (
