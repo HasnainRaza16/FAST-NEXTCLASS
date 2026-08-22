@@ -22,7 +22,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Syed Farooq Ahmed Zaidi",
         "room": "AB2Ro"
       },
@@ -30,7 +30,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Syed Farooq Ahmed Zaidi",
         "room": "AB2Ro"
       },
@@ -40,7 +40,7 @@
         "end": "9:45",
         "course": "Calculus and Analytical Geometry",
         "teacher": "Aneesa",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -56,7 +56,7 @@
         "end": "3:15",
         "course": "Functional English",
         "teacher": "Madiha Rehman",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -78,7 +78,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Syed Farooq Ahmed Zaidi",
         "room": "AB2Ro"
       },
@@ -97,14 +97,6 @@
         "course": "Calculus and Analytical Geometry",
         "teacher": "Aneesa",
         "room": "AB2RoomD 25"
-      },
-      {
-        "day": "Thursday",
-        "start": "8:55",
-        "end": "9:45",
-        "course": "omD 26",
-        "teacher": null,
-        "room": null
       },
       {
         "day": "Friday",
@@ -235,7 +227,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Saif ur Rehman",
         "room": "AB2RoomD 23"
       },
@@ -260,14 +252,14 @@
         "start": "10:45",
         "end": "1:25",
         "course": "Introduction to Information and Communication Technology",
-        "teacher": "Khadija tul kubra",
+        "teacher": "Khadija Tul Kubra",
         "room": "AB2Lab11"
       },
       {
         "day": "Friday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Saif ur Rehman",
         "room": "AB2RoomA 2"
       }
@@ -360,7 +352,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing for AI",
+        "course": "Programming for AI",
         "teacher": "Talha Shahid",
         "room": "AB2RoomD 25"
       },
@@ -400,7 +392,7 @@
         "day": "Friday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing for AI",
+        "course": "Programming for AI",
         "teacher": "Talha Shahid",
         "room": "AB2RoomA 5"
       },
@@ -469,7 +461,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing for AI",
+        "course": "Programming for AI",
         "teacher": "Mehak",
         "room": "AB2RoomA 8"
       },
@@ -478,7 +470,7 @@
         "start": "3:20",
         "end": "4:10",
         "course": "Computer Organizati on and Assembly Language",
-        "teacher": "Rabia Ta bassum",
+        "teacher": "Rabia Tabassum",
         "room": "AB2RoomA 7"
       },
       {
@@ -509,7 +501,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing for AI",
+        "course": "Programming for AI",
         "teacher": "Mehak",
         "room": "AB2RoomC 15"
       },
@@ -517,7 +509,7 @@
         "day": "Friday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing for AI",
+        "course": "Programming for AI",
         "teacher": "Mehak",
         "room": "AB1RoomR 12"
       },
@@ -602,7 +594,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing for AI",
+        "course": "Programming for AI",
         "teacher": "Talha Shahid",
         "room": "AB2RoomA 7"
       },
@@ -634,7 +626,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing for AI",
+        "course": "Programming for AI",
         "teacher": "Talha Shahid",
         "room": "AB2RoomC 16"
       },
@@ -674,7 +666,7 @@
         "day": "Friday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing for AI",
+        "course": "Programming for AI",
         "teacher": "Talha Shahid",
         "room": "AB1RoomR 11"
       },
@@ -703,7 +695,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Dr Kamran Ali",
         "room": "AB1Ro"
       },
@@ -730,14 +722,6 @@
         "course": "Computer Networks - Lab",
         "teacher": "Abdullah Shaikh",
         "room": "AB1Lab3"
-      },
-      {
-        "day": "Tuesday",
-        "start": "8:55",
-        "end": "9:45",
-        "course": "omR 11",
-        "teacher": null,
-        "room": null
       },
       {
         "day": "Wednesday",
@@ -815,7 +799,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Dr Kamran Ali",
         "room": "AB2Ro"
       },
@@ -842,14 +826,6 @@
         "course": "Technical and Business Writing",
         "teacher": "Wajiha Akber Durrani",
         "room": "AB2RoomA 7"
-      },
-      {
-        "day": "Friday",
-        "start": "3:20",
-        "end": "4:10",
-        "course": "omA 7",
-        "teacher": null,
-        "room": null
       }
     ]
   },
@@ -908,7 +884,7 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Generativ e AI",
+        "course": "Generative AI",
         "teacher": "Omer Qureshi",
         "room": "AB1RoomE 2"
       },
@@ -1011,13 +987,13 @@
         "end": "3:15",
         "course": "Applied Calculus",
         "teacher": "Qurat ul Ain Sohail",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Applicatio ns of Infor mation Co mmunicati on Techno logies",
+        "course": "Applications of Information Communication Technologies",
         "teacher": "Shahbaz Akhtar Siddiqui",
         "room": "AB2RoomE 33"
       },
@@ -1025,7 +1001,7 @@
         "day": "Tuesday",
         "start": "9:50",
         "end": "10:40",
-        "course": "Applications of Information Co mmunication Technologies",
+        "course": "Applications of Information Communication Technologies",
         "teacher": "Shahbaz Akhtar Siddiqui",
         "room": "AB2RoomD 25"
       },
@@ -1050,7 +1026,7 @@
         "start": "1:30",
         "end": "2:20",
         "course": "Pakistan Studies",
-        "teacher": "Khushbo o Farid",
+        "teacher": "Khushboo Farid",
         "room": "AB2RoomD 25"
       },
       {
@@ -1142,7 +1118,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Civics and Communit y Engage ment",
+        "course": "Civics and Community Engagement",
         "teacher": "Wajiha Raheeq",
         "room": "AB2RoomB 10"
       },
@@ -1199,7 +1175,7 @@
         "start": "8:55",
         "end": "9:45",
         "course": "Discrete Structures",
-        "teacher": "Syed Asim Mah mood",
+        "teacher": "Syed Asim Mahmood",
         "room": "AB2RoomC 14"
       },
       {
@@ -1247,7 +1223,7 @@
         "start": "8:55",
         "end": "9:45",
         "course": "Discrete Structures",
-        "teacher": "Syed Asim Mah mood",
+        "teacher": "Syed Asim Mahmood",
         "room": "AB2RoomC 19"
       },
       {
@@ -1420,7 +1396,7 @@
         "start": "2:25",
         "end": "3:15",
         "course": "Discrete Structures",
-        "teacher": "Syed Asim Mah mood",
+        "teacher": "Syed Asim Mahmood",
         "room": "AB2RoomC 15"
       },
       {
@@ -1450,7 +1426,7 @@
         "end": "12:30",
         "course": "Calculus and Analytical Geometry",
         "teacher": "Syed Muhammad Fahad Riaz",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Monday",
@@ -1458,7 +1434,7 @@
         "end": "1:25",
         "course": "Functional English",
         "teacher": "Nazia Imam",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -1480,7 +1456,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Ghulam Qadir Bhurgari Baloch",
         "room": "AB2RoomE 32"
       },
@@ -1488,7 +1464,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Ghulam Qadir Bhurgari Baloch",
         "room": "AB2RoomE 30"
       },
@@ -1512,7 +1488,7 @@
         "day": "Wednesday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Programmin g Fundamen tals",
+        "course": "Programming Fundamentals",
         "teacher": "Ghulam Qadir Bhurgari Baloch",
         "room": "AB2RoomD 25"
       },
@@ -1597,7 +1573,7 @@
         "day": "Monday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Programmin g Fundamen tals",
+        "course": "Programming Fundamentals",
         "teacher": "Javeria Farooq",
         "room": "AB2RoomD 24"
       },
@@ -1605,7 +1581,7 @@
         "day": "Tuesday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Programmin g Fundamen tals",
+        "course": "Programming Fundamentals",
         "teacher": "Javeria Farooq",
         "room": "AB2RoomD 23"
       },
@@ -1661,7 +1637,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Javeria Farooq",
         "room": "AB2RoomC 21"
       },
@@ -1746,7 +1722,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Islamic St udies/Ethi cs",
+        "course": "Islamic Studies/Ethics",
         "teacher": "Farhan Ali Memon",
         "room": "AB2RoomD 22"
       },
@@ -1754,7 +1730,7 @@
         "day": "Tuesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Abdul Rahman",
         "room": "AB2RoomD 22"
       },
@@ -1818,7 +1794,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Abdul Rahman",
         "room": "AB2RoomC 21"
       },
@@ -1863,7 +1839,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Javeria Farooq",
         "room": "AB2RoomC 19"
       },
@@ -1887,7 +1863,7 @@
         "day": "Tuesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Islamic St udies/Ethi cs",
+        "course": "Islamic Studies/Ethics",
         "teacher": "Farhan Ali Memon",
         "room": "AB2RoomC 19"
       },
@@ -1903,7 +1879,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Javeria Farooq",
         "room": "AB2RoomC 19"
       },
@@ -1943,7 +1919,7 @@
         "day": "Friday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Javeria Farooq",
         "room": "AB2RoomA 2"
       },
@@ -2052,7 +2028,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Ghulam Qadir Bhurgari Baloch",
         "room": "AB2RoomE 33"
       },
@@ -2068,7 +2044,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Ghulam Qadir Bhurgari Baloch",
         "room": "AB2RoomE 30"
       },
@@ -2169,7 +2145,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Nida Munawar",
         "room": "AB2RoomC 17"
       },
@@ -2177,7 +2153,7 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Nida Munawar",
         "room": "AB2RoomC 18"
       },
@@ -2225,7 +2201,7 @@
         "day": "Friday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Nida Munawar",
         "room": "AB2RoomA 1"
       }
@@ -2310,7 +2286,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Ubaid Ullah",
         "room": "AB2RoomE 32"
       },
@@ -2326,7 +2302,7 @@
         "day": "Wednesday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Programmin g Fundamen tals",
+        "course": "Programming Fundamentals",
         "teacher": "Ubaid Ullah",
         "room": "AB2RoomD 26"
       },
@@ -2334,7 +2310,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Ubaid Ullah",
         "room": "AB2RoomC 16"
       },
@@ -2371,7 +2347,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Abdul Rahman",
         "room": "AB2RoomC 17"
       },
@@ -2411,7 +2387,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Abdul Rahman",
         "room": "AB2RoomC 16"
       },
@@ -2544,7 +2520,7 @@
         "day": "Monday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Nida Munawar",
         "room": "AB2RoomC 15"
       },
@@ -2624,7 +2600,7 @@
         "day": "Friday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Programmin g Fundamen tals",
+        "course": "Programming Fundamentals",
         "teacher": "Nida Munawar",
         "room": "AB2RoomA 1"
       }
@@ -2717,8 +2693,8 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing Funda mentals",
-        "teacher": "Bakhtaw er",
+        "course": "Programming Fundamentals",
+        "teacher": "Bakhtawer",
         "room": "AB2RoomC 15"
       },
       {
@@ -2733,8 +2709,8 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
-        "teacher": "Bakhtaw er",
+        "course": "Programming Fundamentals",
+        "teacher": "Bakhtawer",
         "room": "AB2RoomC 16"
       },
       {
@@ -2749,8 +2725,8 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
-        "teacher": "Bakhtaw er",
+        "course": "Programming Fundamentals",
+        "teacher": "Bakhtawer",
         "room": "AB2RoomE 31"
       },
       {
@@ -2882,7 +2858,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Mahrukh Khan",
         "room": "AB2RoomE 29"
       },
@@ -3071,7 +3047,7 @@
         "day": "Friday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Object Oriented Programm ing",
+        "course": "Object Oriented Programming",
         "teacher": "Javeria Farooq",
         "room": "AB1RoomR 12"
       },
@@ -3080,7 +3056,7 @@
         "start": "3:20",
         "end": "4:10",
         "course": "Computer Organizati on and Assembly Language",
-        "teacher": "Rabia Ta bassum",
+        "teacher": "Rabia Tabassum",
         "room": "AB1RoomR 109"
       }
     ]
@@ -3298,7 +3274,7 @@
         "start": "2:25",
         "end": "3:15",
         "course": "Discrete Structures",
-        "teacher": "Bakhtaw er",
+        "teacher": "Bakhtawer",
         "room": "AB2RoomA 7"
       },
       {
@@ -3330,7 +3306,7 @@
         "start": "1:30",
         "end": "2:20",
         "course": "Discrete Structures",
-        "teacher": "Bakhtaw er",
+        "teacher": "Bakhtawer",
         "room": "AB2RoomC 14"
       },
       {
@@ -3532,7 +3508,7 @@
         "start": "8:00",
         "end": "8:50",
         "course": "Computer Organizati on and Assembly Language",
-        "teacher": "Rabia Ta bassum",
+        "teacher": "Rabia Tabassum",
         "room": "AB2RoomA 2"
       },
       {
@@ -3540,7 +3516,7 @@
         "start": "8:55",
         "end": "9:45",
         "course": "Data Structures",
-        "teacher": "Sumaiya h",
+        "teacher": "Sumaiyah",
         "room": "AB2RoomA 2"
       },
       {
@@ -3596,7 +3572,7 @@
         "start": "3:20",
         "end": "4:10",
         "course": "Computer Organizati on and Assembly Language",
-        "teacher": "Rabia Ta bassum",
+        "teacher": "Rabia Tabassum",
         "room": "AB2RoomC 12"
       },
       {
@@ -3899,7 +3875,7 @@
         "start": "8:55",
         "end": "9:45",
         "course": "Discrete Structures",
-        "teacher": "Bakhtaw er",
+        "teacher": "Bakhtawer",
         "room": "AB2RoomA 2"
       },
       {
@@ -3955,7 +3931,7 @@
         "start": "1:30",
         "end": "2:20",
         "course": "Discrete Structures",
-        "teacher": "Bakhtaw er",
+        "teacher": "Bakhtawer",
         "room": "AB2RoomA 1"
       },
       {
@@ -3971,7 +3947,7 @@
         "start": "8:55",
         "end": "9:45",
         "course": "Discrete Structures",
-        "teacher": "Bakhtaw er",
+        "teacher": "Bakhtawer",
         "room": "AB2RoomC 13"
       },
       {
@@ -4321,7 +4297,7 @@
         "day": "Monday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Syed Kashan Hussain Naqvi",
         "room": "AB1RoomR 11"
       },
@@ -4337,7 +4313,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Syed Kashan Hussain Naqvi",
         "room": "AB2RoomB 9"
       },
@@ -4361,7 +4337,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Zulfiqar Ali",
         "room": "AB2RoomB 9"
       },
@@ -4369,7 +4345,7 @@
         "day": "Thursday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Syed Kashan Hussain Naqvi",
         "room": "AB2RoomA 7"
       },
@@ -4454,7 +4430,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Shafique Rahman",
         "room": "AB1RoomE 6"
       },
@@ -4478,7 +4454,7 @@
         "day": "Monday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Abeeha Sattar",
         "room": "AB1RoomE 5"
       },
@@ -4558,7 +4534,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Shafique Rahman",
         "room": "AB2RoomA 3"
       },
@@ -4652,7 +4628,7 @@
         "start": "1:30",
         "end": "2:20",
         "course": "Applied Human Computer Interaction",
-        "teacher": "Sumaiya h",
+        "teacher": "Sumaiyah",
         "room": "AB2RoomA 3"
       },
       {
@@ -4692,14 +4668,14 @@
         "start": "2:25",
         "end": "3:15",
         "course": "Applied Human Computer Interaction",
-        "teacher": "Sumaiya h",
+        "teacher": "Sumaiyah",
         "room": "AB2RoomA 1"
       },
       {
         "day": "Friday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Farrukh Salim Shaikh",
         "room": "AB1Ro"
       },
@@ -4736,7 +4712,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Syed Kashan Hussain Naqvi",
         "room": "AB1RoomE 3"
       },
@@ -4776,7 +4752,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Nasir Uddin",
         "room": "AB2RoomA 3"
       },
@@ -4792,7 +4768,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Nasir Uddin",
         "room": "AB2RoomA 2"
       },
@@ -4816,7 +4792,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Syed Kashan Hussain Naqvi",
         "room": "AB2RoomA 1"
       },
@@ -4832,7 +4808,7 @@
         "day": "Friday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Nasir Uddin",
         "room": "AB1Ro"
       },
@@ -4853,7 +4829,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Farrukh Salim Shaikh",
         "room": "AB1RoomE 5"
       },
@@ -4877,7 +4853,7 @@
         "day": "Monday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Aashir Mahboob",
         "room": "AB1RoomE 3"
       },
@@ -4901,7 +4877,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Farrukh Salim Shaikh",
         "room": "AB2RoomA 3"
       },
@@ -4925,7 +4901,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Aashir Mahboob",
         "room": "AB2RoomA 2"
       },
@@ -4949,7 +4925,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Aashir Mahboob",
         "room": "AB1RoomR 109"
       },
@@ -5050,7 +5026,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Anaum Hamid",
         "room": "AB2RoomA 2"
       },
@@ -5098,7 +5074,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Abeeha Sattar",
         "room": "AB1RoomR 12"
       },
@@ -5119,7 +5095,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Aashir Mahboob",
         "room": "AB1RoomE 3"
       },
@@ -5159,7 +5135,7 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Shafique Rahman",
         "room": "AB2RoomA 2"
       },
@@ -5183,7 +5159,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Aashir Mahboob",
         "room": "AB2RoomA 1"
       },
@@ -5199,7 +5175,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Shafique Rahman",
         "room": "AB2RoomA 1"
       },
@@ -5284,7 +5260,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Anaum Hamid",
         "room": "AB1RoomE 2"
       },
@@ -5340,7 +5316,7 @@
         "day": "Thursday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Anaum Hamid",
         "room": "AB1RoomR 109"
       },
@@ -5417,7 +5393,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Aashir Mahboob",
         "room": "AB1RoomE 1"
       },
@@ -5441,7 +5417,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Computer Architectu re",
+        "course": "Computer Architecture",
         "teacher": "Aashir Mahboob",
         "room": "AB1RoomR 109"
       },
@@ -5457,7 +5433,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Nasir Uddin",
         "room": "AB1RoomR 109"
       },
@@ -5497,7 +5473,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Nasir Uddin",
         "room": "AB1RoomR 11"
       },
@@ -5691,7 +5667,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Sandesh Kumar",
         "room": "AB1RoomE 6"
       },
@@ -5699,7 +5675,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Parallel and Distri buted Co mputing",
+        "course": "Parallel and Distributed Computing",
         "teacher": "Zulfiqar Ali",
         "room": "AB1RoomE 6"
       },
@@ -5739,7 +5715,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Parallel and Distri buted Co mputing",
+        "course": "Parallel and Distributed Computing",
         "teacher": "Zulfiqar Ali",
         "room": "AB1RoomE 6"
       },
@@ -5747,7 +5723,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Sandesh Kumar",
         "room": "AB1RoomE 6"
       }
@@ -5768,7 +5744,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Sandesh Kumar",
         "room": "AB1RoomE 5"
       },
@@ -5776,7 +5752,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Parallel and Distri buted Co mputing",
+        "course": "Parallel and Distributed Computing",
         "teacher": "Zulfiqar Ali",
         "room": "AB1RoomE 5"
       }
@@ -5813,7 +5789,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Shakil Ahmed",
         "room": "AB1RoomE 5"
       },
@@ -5853,7 +5829,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Anaum Hamid",
         "room": "AB1RoomE 5"
       },
@@ -5861,7 +5837,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Anaum Hamid",
         "room": "AB1RoomE 5"
       },
@@ -5869,7 +5845,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Shakil Ahmed",
         "room": "AB1RoomE 4"
       },
@@ -5906,7 +5882,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Zainab Asif Jawed",
         "room": "AB1RoomE 5"
       },
@@ -5914,7 +5890,7 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Jibran Rasheed Khan",
         "room": "AB1RoomE 5"
       },
@@ -5954,7 +5930,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Zainab Asif Jawed",
         "room": "AB1RoomE 4"
       }
@@ -6052,7 +6028,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Parallel and Distri buted Co mputing",
+        "course": "Parallel and Distributed Computing",
         "teacher": "Ghufran Ahmed",
         "room": "AB1RoomE 4"
       },
@@ -6060,7 +6036,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Saeeda Kanwal",
         "room": "AB1RoomE 4"
       },
@@ -6092,7 +6068,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Shaheer Ahmad Khan",
         "room": "AB1RoomE 3"
       },
@@ -6100,7 +6076,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Parallel and Distri buted Co mputing",
+        "course": "Parallel and Distributed Computing",
         "teacher": "Ghufran Ahmed",
         "room": "AB1RoomE 3"
       },
@@ -6108,7 +6084,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Saeeda Kanwal",
         "room": "AB1RoomE 3"
       }
@@ -6137,7 +6113,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Shakil Ahmed",
         "room": "AB1RoomE 3"
       },
@@ -6161,7 +6137,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Shakil Ahmed",
         "room": "AB1RoomE 3"
       },
@@ -6206,7 +6182,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Parallel and Distri buted Co mputing",
+        "course": "Parallel and Distributed Computing",
         "teacher": "Zulfiqar Ali",
         "room": "AB1RoomE 3"
       },
@@ -6214,7 +6190,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Abdul Rahman",
         "room": "AB1RoomE 3"
       },
@@ -6230,7 +6206,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Parallel and Distri buted Co mputing",
+        "course": "Parallel and Distributed Computing",
         "teacher": "Zulfiqar Ali",
         "room": "AB1RoomE 3"
       },
@@ -6238,7 +6214,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Abdul Rahman",
         "room": "AB1RoomE 3"
       },
@@ -6246,7 +6222,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Parallel and Distri buted Co mputing",
+        "course": "Parallel and Distributed Computing",
         "teacher": "Zulfiqar Ali",
         "room": "AB1RoomE 3"
       },
@@ -6262,7 +6238,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Rabia Ahmed",
         "room": "AB1RoomE 2"
       }
@@ -6275,7 +6251,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Sandesh Kumar",
         "room": "AB1RoomE 2"
       },
@@ -6291,7 +6267,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Fahad Sherwani",
         "room": "AB1RoomE 2"
       },
@@ -6299,7 +6275,7 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Fahad Sherwani",
         "room": "AB1RoomE 3"
       },
@@ -6307,7 +6283,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Sandesh Kumar",
         "room": "AB1RoomE 2"
       },
@@ -6339,7 +6315,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Fahad Sherwani",
         "room": "AB1RoomE 2"
       }
@@ -6360,7 +6336,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Jibran Rasheed Khan",
         "room": "AB1RoomE 1"
       },
@@ -6384,7 +6360,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Shahar Bano Husnine",
         "room": "AB1RoomE 2"
       },
@@ -6392,7 +6368,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Jibran Rasheed Khan",
         "room": "AB1RoomE 1"
       },
@@ -6416,7 +6392,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Informatio n Security",
+        "course": "Information Security",
         "teacher": "Jibran Rasheed Khan",
         "room": "AB1RoomE 1"
       }
@@ -6556,7 +6532,7 @@
         "end": "8:50",
         "course": "Functional English",
         "teacher": "Ayesha Khan",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Monday",
@@ -6564,7 +6540,7 @@
         "end": "9:45",
         "course": "Applied Physics",
         "teacher": "Javaid Qureshi",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Monday",
@@ -6572,7 +6548,7 @@
         "end": "10:40",
         "course": "Programming Fundamentals",
         "teacher": "Abuzar Zafar",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Monday",
@@ -6580,13 +6556,13 @@
         "end": "2:20",
         "course": "Anthropology",
         "teacher": "Muhammad Abdullah Siddqui",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Abuzar Zafar",
         "room": "AB2RoomE 31"
       },
@@ -6596,7 +6572,7 @@
         "end": "10:40",
         "course": "Anthropology",
         "teacher": "Muhammad Abdullah Siddqui",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -6618,7 +6594,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Abuzar Zafar",
         "room": "AB2RoomD 26"
       },
@@ -6711,7 +6687,7 @@
         "day": "Monday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Abuzar Zafar",
         "room": "AB2RoomD 24"
       },
@@ -6799,7 +6775,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Abuzar Zafar",
         "room": "AB2RoomD 22"
       },
@@ -7190,7 +7166,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Ethical Hacking: Tools and Technique s",
+        "course": "Ethical Hacking: Tools and Techniques",
         "teacher": "Abuzar Zafar",
         "room": "AB2RoomB 10"
       },
@@ -7230,7 +7206,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Ethical Hacking: Tools and Technique s",
+        "course": "Ethical Hacking: Tools and Techniques",
         "teacher": "Abuzar Zafar",
         "room": "AB2RoomA 8"
       },
@@ -7254,8 +7230,8 @@
         "day": "Friday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Informatio n Security",
-        "teacher": "Rabia Ta bassum",
+        "course": "Information Security",
+        "teacher": "Rabia Tabassum",
         "room": "AB1RoomE 4"
       },
       {
@@ -7299,7 +7275,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Waseem",
         "room": "AB1RoomE 6"
       },
@@ -7307,7 +7283,7 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Waseem",
         "room": "AB1RoomR 11"
       },
@@ -7400,7 +7376,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Waseem",
         "room": "AB1RoomE 5"
       },
@@ -7408,7 +7384,7 @@
         "day": "Thursday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Professio nal Practices in IT",
+        "course": "Professional Practices in IT",
         "teacher": "Waseem",
         "room": "AB1RoomE 5"
       },
@@ -7429,7 +7405,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Farooq Ahmed Zaidi",
         "room": "AB2RoomD 28"
       },
@@ -7439,7 +7415,7 @@
         "end": "11:35",
         "course": "Calculus and Analytical Geometry",
         "teacher": "Uzma Saleh",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Monday",
@@ -7455,7 +7431,7 @@
         "end": "11:35",
         "course": "Calculus and Analytical Geometry",
         "teacher": "Uzma Saleh",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -7463,7 +7439,7 @@
         "end": "12:30",
         "course": "Programming Fundamentals",
         "teacher": "Syed Farooq Ahmed Zaidi",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -7471,7 +7447,7 @@
         "end": "2:20",
         "course": "Understanding Sirat-Un-Nabi (PBUH)",
         "teacher": "Muhammad Shahzad Shaikh",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
@@ -7509,17 +7485,9 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Syed Farooq Ahmed Zaidi",
         "room": "AB2Ro"
-      },
-      {
-        "day": "Thursday",
-        "start": "3:20",
-        "end": "4:10",
-        "course": "omD 26",
-        "teacher": null,
-        "room": null
       },
       {
         "day": "Friday",
@@ -7586,7 +7554,7 @@
         "day": "Monday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Programmin g Fundamen tals",
+        "course": "Programming Fundamentals",
         "teacher": "Saif ur Rehman",
         "room": "AB2RoomE 33"
       },
@@ -7618,7 +7586,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Saif ur Rehman",
         "room": "AB2RoomD 24"
       },
@@ -7658,7 +7626,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Saif ur Rehman",
         "room": "AB2RoomD 23"
       },
@@ -7719,7 +7687,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Introductio n to Data Science",
+        "course": "Introduction to Data Science",
         "teacher": "Sameer Faisal",
         "room": "AB2RoomB 11"
       },
@@ -7743,7 +7711,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Introductio n to Data Science",
+        "course": "Introduction to Data Science",
         "teacher": "Sameer Faisal",
         "room": "AB2RoomB 11"
       },
@@ -7759,7 +7727,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Introductio n to Data Science",
+        "course": "Introduction to Data Science",
         "teacher": "Sameer Faisal",
         "room": "AB2RoomC 21"
       },
@@ -7785,7 +7753,7 @@
         "end": "12:30",
         "course": "Understanding of Holy Quran I/Ethics I",
         "teacher": "MEHMOOD IBRAHIM SHAIKH",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Thursday",
@@ -7852,7 +7820,7 @@
         "day": "Monday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Design and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Dr Kamran Ali",
         "room": "AB2Ro"
       },
@@ -7860,25 +7828,9 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Data War ehousing and Business I ntellligenc e",
+        "course": "Data Warehousing and Business Intelligence",
         "teacher": "Sania Urooj",
         "room": "AB2Ro"
-      },
-      {
-        "day": "Tuesday",
-        "start": "2:25",
-        "end": "3:15",
-        "course": "omE 31",
-        "teacher": null,
-        "room": null
-      },
-      {
-        "day": "Tuesday",
-        "start": "3:20",
-        "end": "4:10",
-        "course": "omE 30",
-        "teacher": null,
-        "room": null
       },
       {
         "day": "Wednesday",
@@ -7988,7 +7940,7 @@
         "day": "Friday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Data War ehousing and Business I ntellligenc e",
+        "course": "Data Warehousing and Business Intelligence",
         "teacher": "Sania Urooj",
         "room": "AB1Ro"
       }
@@ -8001,7 +7953,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Data War ehousing and Business I ntellligenc e",
+        "course": "Data Warehousing and Business Intelligence",
         "teacher": "Sania Urooj",
         "room": "AB1Ro"
       },
@@ -8036,14 +7988,6 @@
         "course": "Data Analysis and Visualization - Lab",
         "teacher": "M Khalid",
         "room": "AB2Lab12"
-      },
-      {
-        "day": "Tuesday",
-        "start": "8:00",
-        "end": "8:50",
-        "course": "omR 11",
-        "teacher": null,
-        "room": null
       },
       {
         "day": "Wednesday",
@@ -8081,7 +8025,7 @@
         "day": "Thursday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Data War ehousing and Business I ntellligenc e",
+        "course": "Data Warehousing and Business Intelligence",
         "teacher": "Sania Urooj",
         "room": "AB2Ro"
       },
@@ -8121,7 +8065,7 @@
         "day": "Friday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Data War ehousing and Business I ntellligenc e",
+        "course": "Data Warehousing and Business Intelligence",
         "teacher": "Sania Urooj",
         "room": "AB1Ro"
       },
@@ -8129,7 +8073,7 @@
         "day": "Friday",
         "start": "8:55",
         "end": "9:45",
-        "course": "oDmesAig 5n and Analysis of Algorith ms",
+        "course": "Design and Analysis of Algorithms",
         "teacher": "Dr Kamran Ali",
         "room": "AB1Ro"
       },
@@ -8158,7 +8102,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Engineeri ng Drawing",
+        "course": "Engineering Drawing",
         "teacher": "Aamir Ali",
         "room": "AB2RoomD 28"
       },
@@ -8166,7 +8110,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Occupatio nal Health and Safety",
+        "course": "Occupational Health and Safety",
         "teacher": "Aqib Noor",
         "room": "AB2RoomE 29"
       },
@@ -8192,7 +8136,7 @@
         "end": "4:10",
         "course": "Applied Calculus",
         "teacher": "Qurat ul Ain Sohail",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -8216,7 +8160,7 @@
         "end": "1:25",
         "course": "Applications of Information Communicati on Technologies",
         "teacher": "Shahbaz Akhtar Siddiqui",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -8230,7 +8174,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Applicatio ns of Infor mation Co mmunicati on Techno logies",
+        "course": "Applications of Information Communication Technologies",
         "teacher": "Shahbaz Akhtar Siddiqui",
         "room": "AB2RoomE 32"
       },
@@ -8248,15 +8192,15 @@
         "end": "8:50",
         "course": "Applied Calculus",
         "teacher": "Qurat ul Ain Sohail",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
         "course": "Pakistan Studies",
-        "teacher": "Khushbo o Farid",
-        "room": "AB2RoomD 27"
+        "teacher": "Khushboo Farid",
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
@@ -8272,7 +8216,7 @@
         "end": "1:25",
         "course": "Physics for Engineers",
         "teacher": "Maham Ghauri",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Thursday",
@@ -8315,7 +8259,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Engineeri ng Drawing",
+        "course": "Engineering Drawing",
         "teacher": "Aamir Ali",
         "room": "AB2RoomD 25"
       },
@@ -8323,7 +8267,7 @@
         "day": "Monday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Applicatio ns of Infor mation Co mmunicati on Techno logies",
+        "course": "Applications of Information Communication Technologies",
         "teacher": "Shahbaz Akhtar Siddiqui",
         "room": "AB2RoomD 25"
       },
@@ -8332,14 +8276,14 @@
         "start": "8:00",
         "end": "8:50",
         "course": "Pakistan Studies",
-        "teacher": "Khushbo o Farid",
+        "teacher": "Khushboo Farid",
         "room": "AB2RoomD 26"
       },
       {
         "day": "Tuesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Applicatio ns of Infor mation Co mmunicati on Techno logies",
+        "course": "Applications of Information Communication Technologies",
         "teacher": "Shahbaz Akhtar Siddiqui",
         "room": "AB2RoomD 25"
       },
@@ -8379,7 +8323,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Occupatio nal Health and Safety",
+        "course": "Occupational Health and Safety",
         "teacher": "Aqib Noor",
         "room": "AB2RoomD 24"
       },
@@ -8722,7 +8666,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Data Com municatio n and Networks",
+        "course": "Data Communication and Networks",
         "teacher": "Zakir Hussain",
         "room": "AB1RoomR 12"
       },
@@ -8770,7 +8714,7 @@
         "day": "Tuesday",
         "start": "11:40",
         "end": "12:30",
-        "course": "Electromagneti c Theory",
+        "course": "Electromagnetic Theory",
         "teacher": "M. Ahsan Khan Sunny",
         "room": "AB2RoomC 12"
       },
@@ -8794,7 +8738,7 @@
         "day": "Wednesday",
         "start": "11:40",
         "end": "12:30",
-        "course": "Electromagneti c Theory",
+        "course": "Electromagnetic Theory",
         "teacher": "M. Ahsan Khan Sunny",
         "room": "AB2RoomC 12"
       },
@@ -8810,7 +8754,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Data Com municatio n and Networks",
+        "course": "Data Communication and Networks",
         "teacher": "Zakir Hussain",
         "room": "AB2RoomB 9"
       },
@@ -8834,7 +8778,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Basic Mec hanical En gineering",
+        "course": "Basic Mechanical Engineering",
         "teacher": "Sadaf Ayesha",
         "room": "AB2RoomA 8"
       },
@@ -8903,7 +8847,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Basic Mec hanical En gineering",
+        "course": "Basic Mechanical Engineering",
         "teacher": "Sadaf Ayesha",
         "room": "AB1RoomE 4"
       },
@@ -8911,7 +8855,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Data Com municatio n and Networks",
+        "course": "Data Communication and Networks",
         "teacher": "Zakir Hussain",
         "room": "AB1RoomE 5"
       },
@@ -8943,7 +8887,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Basic Mec hanical En gineering",
+        "course": "Basic Mechanical Engineering",
         "teacher": "Sadaf Ayesha",
         "room": "AB1RoomR 109"
       },
@@ -8975,7 +8919,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Basic Mec hanical En gineering",
+        "course": "Basic Mechanical Engineering",
         "teacher": "Sadaf Ayesha",
         "room": "AB2RoomA 6"
       },
@@ -8999,7 +8943,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Data Com municatio n and Networks",
+        "course": "Data Communication and Networks",
         "teacher": "Zakir Hussain",
         "room": "AB2RoomA 5"
       },
@@ -9023,7 +8967,7 @@
         "day": "Friday",
         "start": "10:45",
         "end": "11:35",
-        "course": "Electromagneti c Theory",
+        "course": "Electromagnetic Theory",
         "teacher": "M. Ahsan Khan Sunny",
         "room": "AB2RoomC 12"
       },
@@ -9150,7 +9094,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Asiya Zaheer",
         "room": "AB2RoomE 29"
       },
@@ -9182,7 +9126,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Islamic St udies/Ethi cs",
+        "course": "Islamic Studies/Ethics",
         "teacher": "Immad Uddin Ahmed",
         "room": "AB2RoomD 28"
       },
@@ -9190,7 +9134,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Mohsin Ali",
         "room": "AB2Ro"
       },
@@ -9206,7 +9150,7 @@
         "day": "Tuesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Business Mathemati cs",
+        "course": "Business Mathematics",
         "teacher": "Sana Naz",
         "room": "AB2RoomD 28"
       },
@@ -9230,7 +9174,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "oInmtrDod u2c8tio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Mohsin Ali",
         "room": "AB2Ro"
       },
@@ -9248,15 +9192,15 @@
         "end": "12:30",
         "course": "Marketing Management",
         "teacher": "Asiya Zaheer",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Business Mathemati cs",
+        "course": "Business Mathematics",
         "teacher": "Sana Naz",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
@@ -9264,15 +9208,15 @@
         "end": "3:15",
         "course": "Understan ding Sirat- Un-Nabi (PBUH)",
         "teacher": "Immad Uddin Ahmed",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "oInmtrEod 3u0ctio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Mohsin Ali",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Thursday",
@@ -9347,9 +9291,9 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Islamic St udies/Ethi cs",
+        "course": "Islamic Studies/Ethics",
         "teacher": "Immad Uddin Ahmed",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Tuesday",
@@ -9403,7 +9347,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Mohsin Ali",
         "room": "AB2Ro"
       },
@@ -9411,7 +9355,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Asiya Zaheer",
         "room": "AB1RoomR 11"
       },
@@ -9419,7 +9363,7 @@
         "day": "Thursday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Asiya Zaheer",
         "room": "AB2RoomD 24"
       },
@@ -9435,7 +9379,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Islamic St udies/Ethi cs",
+        "course": "Islamic Studies/Ethics",
         "teacher": "Immad Uddin Ahmed",
         "room": "AB2RoomD 24"
       },
@@ -9443,7 +9387,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "oInmtrDod u2c4tio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Mohsin Ali",
         "room": "AB2Ro"
       },
@@ -9451,17 +9395,9 @@
         "day": "Friday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Understandi ng Sirat-Un- Nabi (PBUH)",
+        "course": "Understanding Sirat-Un-Nabi (PBUH)",
         "teacher": "Immad Uddin Ahmed",
         "room": "AB2RoomA 6"
-      },
-      {
-        "day": "Friday",
-        "start": "2:25",
-        "end": "3:15",
-        "course": "omD 23",
-        "teacher": null,
-        "room": null
       }
     ]
   },
@@ -9480,7 +9416,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Asiya Zaheer",
         "room": "AB2RoomD 23"
       },
@@ -9505,7 +9441,7 @@
         "start": "1:30",
         "end": "2:20",
         "course": "IT in Business",
-        "teacher": "Magdale n Gloria Miranda",
+        "teacher": "Magdalen Gloria Miranda",
         "room": "AB2RoomD 22"
       },
       {
@@ -9520,7 +9456,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Asiya Zaheer",
         "room": "AB2RoomD 23"
       },
@@ -9629,7 +9565,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Umar Farooque",
         "room": "AB2RoomE 33"
       },
@@ -9669,7 +9605,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Umar Farooque",
         "room": "AB2RoomC 21"
       },
@@ -9757,7 +9693,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Umar Farooque",
         "room": "AB2RoomD 22"
       },
@@ -9811,14 +9747,14 @@
         "start": "2:25",
         "end": "3:15",
         "course": "IT in Business",
-        "teacher": "Magdale n Gloria Miranda",
+        "teacher": "Magdalen Gloria Miranda",
         "room": "AB2RoomC 19"
       },
       {
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Business Mathemati cs",
+        "course": "Business Mathematics",
         "teacher": "Sana Naz",
         "room": "AB2RoomC 18"
       },
@@ -9826,7 +9762,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Umar Farooque",
         "room": "AB2RoomE 32"
       },
@@ -9834,7 +9770,7 @@
         "day": "Tuesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Umar Farooque",
         "room": "AB2RoomE 30"
       },
@@ -10008,14 +9944,14 @@
         "start": "1:30",
         "end": "2:20",
         "course": "IT in Business",
-        "teacher": "Magdale n Gloria Miranda",
+        "teacher": "Magdalen Gloria Miranda",
         "room": "AB2RoomC 18"
       },
       {
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Aleena Fayyaz",
         "room": "AB2RoomC 18"
       },
@@ -10047,7 +9983,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Aleena Fayyaz",
         "room": "AB2RoomC 18"
       },
@@ -10124,7 +10060,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Museara",
         "room": "AB2RoomC 17"
       },
@@ -10196,7 +10132,7 @@
         "day": "Thursday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Museara",
         "room": "AB2RoomD 23"
       },
@@ -10257,7 +10193,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Aleena Fayyaz",
         "room": "AB2RoomC 16"
       },
@@ -10329,7 +10265,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Asiya Zaheer",
         "room": "AB2RoomC 17"
       },
@@ -10361,7 +10297,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Asiya Zaheer",
         "room": "AB2RoomD 23"
       },
@@ -10377,7 +10313,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Aleena Fayyaz",
         "room": "AB2RoomD 22"
       },
@@ -10462,7 +10398,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Marketing Managem ent",
+        "course": "Marketing Management",
         "teacher": "Museara",
         "room": "AB2RoomC 16"
       },
@@ -10535,7 +10471,7 @@
         "start": "8:55",
         "end": "9:45",
         "course": "IT in Business",
-        "teacher": "Magdale n Gloria Miranda",
+        "teacher": "Magdalen Gloria Miranda",
         "room": "AB2RoomD 22"
       },
       {
@@ -10571,7 +10507,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Civics and Communit y Engage ment",
+        "course": "Civics and Community Engagement",
         "teacher": "Faiza Iqbal",
         "room": "AB2RoomC 13"
       },
@@ -10579,7 +10515,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Business Economic s",
+        "course": "Business Economics",
         "teacher": "Michael Hieman Simon",
         "room": "AB2RoomC 12"
       },
@@ -10652,7 +10588,7 @@
         "start": "8:55",
         "end": "9:45",
         "course": "Business Finance",
-        "teacher": "Shoaib Anwer Qa mbrani",
+        "teacher": "Shoaib Anwer Qambrani",
         "room": "AB2RoomE 29"
       },
       {
@@ -10675,7 +10611,7 @@
         "day": "Wednesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Business Economic s",
+        "course": "Business Economics",
         "teacher": "Michael Hieman Simon",
         "room": "AB2RoomC 15"
       },
@@ -10684,7 +10620,7 @@
         "start": "8:00",
         "end": "8:50",
         "course": "Business Finance",
-        "teacher": "Shoaib Anwer Qa mbrani",
+        "teacher": "Shoaib Anwer Qambrani",
         "room": "AB2RoomD 22"
       },
       {
@@ -10707,7 +10643,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Business Economic s",
+        "course": "Business Economics",
         "teacher": "Michael Hieman Simon",
         "room": "AB2RoomC 21"
       },
@@ -10755,7 +10691,7 @@
         "day": "Friday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Psycholog y",
+        "course": "Psychology",
         "teacher": "Aqsa Fayyaz",
         "room": "AB2RoomA 1"
       }
@@ -10768,7 +10704,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Civics and Communit y Engage ment",
+        "course": "Civics and Community Engagement",
         "teacher": "Faiza Iqbal",
         "room": "AB2RoomB 10"
       },
@@ -10800,7 +10736,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Business Economic s",
+        "course": "Business Economics",
         "teacher": "Michael Hieman Simon",
         "room": "AB2RoomB 9"
       },
@@ -10848,7 +10784,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Psycholog y",
+        "course": "Psychology",
         "teacher": "Aqsa Fayyaz",
         "room": "AB2RoomB 10"
       },
@@ -10872,7 +10808,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Business Economic s",
+        "course": "Business Economics",
         "teacher": "Michael Hieman Simon",
         "room": "AB2RoomC 13"
       },
@@ -10906,7 +10842,7 @@
         "end": "4:10",
         "course": "Ideology and Constitution of Pakistan",
         "teacher": "MEHMOOD IBRAHIM SHAIKH",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Friday",
@@ -10925,7 +10861,7 @@
         "day": "Monday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Psycholog y",
+        "course": "Psychology",
         "teacher": "Aqsa Fayyaz",
         "room": "AB2RoomB 9"
       },
@@ -10965,7 +10901,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Civics and Communit y Engage ment",
+        "course": "Civics and Community Engagement",
         "teacher": "Faiza Iqbal",
         "room": "AB2RoomA 6"
       },
@@ -10973,7 +10909,7 @@
         "day": "Tuesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Psycholog y",
+        "course": "Psychology",
         "teacher": "Aqsa Fayyaz",
         "room": "AB2RoomA 7"
       },
@@ -11122,7 +11058,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Psycholog y",
+        "course": "Psychology",
         "teacher": "Aqsa Fayyaz",
         "room": "AB2RoomA 5"
       },
@@ -11130,7 +11066,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Psycholog y",
+        "course": "Psychology",
         "teacher": "Aqsa Fayyaz",
         "room": "AB2RoomA 6"
       },
@@ -11162,7 +11098,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Civics and Communit y Engage ment",
+        "course": "Civics and Community Engagement",
         "teacher": "Wajiha Raheeq",
         "room": "AB2RoomA 5"
       },
@@ -11239,7 +11175,7 @@
         "day": "Monday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Psycholog y",
+        "course": "Psychology",
         "teacher": "Aqsa Fayyaz",
         "room": "AB2RoomA 5"
       },
@@ -11287,7 +11223,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Civics and Communit y Engage ment",
+        "course": "Civics and Community Engagement",
         "teacher": "Wajiha Raheeq",
         "room": "AB2RoomA 3"
       },
@@ -11327,7 +11263,7 @@
         "day": "Tuesday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Psycholog y",
+        "course": "Psychology",
         "teacher": "Aqsa Fayyaz",
         "room": "AB2RoomA 3"
       },
@@ -11368,7 +11304,7 @@
         "start": "3:20",
         "end": "4:10",
         "course": "Business Finance",
-        "teacher": "Shoaib Anwer Qa mbrani",
+        "teacher": "Shoaib Anwer Qambrani",
         "room": "AB2RoomC 13"
       },
       {
@@ -11396,7 +11332,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Basic Eco nometrics",
+        "course": "Basic Econometrics",
         "teacher": "Nighat Jahan",
         "room": "AB1RoomR 109"
       },
@@ -11428,7 +11364,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Financial Managem ent",
+        "course": "Financial Management",
         "teacher": "Zehra Mukhtiar",
         "room": "AB2RoomE 32"
       },
@@ -11476,7 +11412,7 @@
         "day": "Thursday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Financial Managem ent",
+        "course": "Financial Management",
         "teacher": "Zehra Mukhtiar",
         "room": "AB2RoomB 9"
       },
@@ -11508,7 +11444,7 @@
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Financial Managem ent",
+        "course": "Financial Management",
         "teacher": "Zehra Mukhtiar",
         "room": "AB2RoomB 9"
       },
@@ -11516,7 +11452,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Macro Ec onomics",
+        "course": "Macro Economics",
         "teacher": "Anwar Mughees Alam",
         "room": "AB2RoomB 9"
       },
@@ -11524,7 +11460,7 @@
         "day": "Friday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Basic Eco nometrics",
+        "course": "Basic Econometrics",
         "teacher": "Nighat Jahan",
         "room": "AB2RoomA 5"
       },
@@ -11540,7 +11476,7 @@
         "day": "Friday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Macro Ec onomics",
+        "course": "Macro Economics",
         "teacher": "Anwar Mughees Alam",
         "room": "AB1RoomE 5"
       },
@@ -11548,7 +11484,7 @@
         "day": "Friday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Macro Ec onomics",
+        "course": "Macro Economics",
         "teacher": "Anwar Mughees Alam",
         "room": "AB2RoomA 7"
       }
@@ -11601,7 +11537,7 @@
         "day": "Wednesday",
         "start": "9:50",
         "end": "10:40",
-        "course": "Entrepreneurs hip",
+        "course": "Entrepreneurship",
         "teacher": "Nazia Nazeer",
         "room": "AB2RoomA 7"
       },
@@ -11625,7 +11561,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Macro Ec onomics",
+        "course": "Macro Economics",
         "teacher": "Mushtaq Ahmed",
         "room": "AB2RoomA 7"
       },
@@ -11633,7 +11569,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Basic Eco nometrics",
+        "course": "Basic Econometrics",
         "teacher": "Anwar Mughees Alam",
         "room": "AB2RoomA 6"
       },
@@ -11641,7 +11577,7 @@
         "day": "Thursday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Financial Managem ent",
+        "course": "Financial Management",
         "teacher": "Zehra Mukhtiar",
         "room": "AB2RoomA 6"
       },
@@ -11713,7 +11649,7 @@
         "day": "Friday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Macro Ec onomics",
+        "course": "Macro Economics",
         "teacher": "Mushtaq Ahmed",
         "room": "AB1RoomE 3"
       }
@@ -11742,7 +11678,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Basic Eco nometrics",
+        "course": "Basic Econometrics",
         "teacher": "Mushtaq Ahmed",
         "room": "AB2RoomE 34"
       },
@@ -11750,15 +11686,15 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Financial Managem ent",
-        "teacher": "Shoaib Anwer Qa mbrani",
+        "course": "Financial Management",
+        "teacher": "Shoaib Anwer Qambrani",
         "room": "AB2RoomA 6"
       },
       {
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Macro Ec onomics",
+        "course": "Macro Economics",
         "teacher": "Michael Hieman Simon",
         "room": "AB2RoomA 6"
       },
@@ -11806,8 +11742,8 @@
         "day": "Thursday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Financial Managem ent",
-        "teacher": "Shoaib Anwer Qa mbrani",
+        "course": "Financial Management",
+        "teacher": "Shoaib Anwer Qambrani",
         "room": "AB2RoomA 3"
       },
       {
@@ -11862,7 +11798,7 @@
         "day": "Friday",
         "start": "11:40",
         "end": "12:30",
-        "course": "Entrepreneursh ip",
+        "course": "Entrepreneurship",
         "teacher": "Nazia Nazeer",
         "room": "AB1RoomE 2"
       },
@@ -11870,15 +11806,15 @@
         "day": "Friday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Financial Managem ent",
-        "teacher": "Shoaib Anwer Qa mbrani",
+        "course": "Financial Management",
+        "teacher": "Shoaib Anwer Qambrani",
         "room": "AB1RoomE 2"
       },
       {
         "day": "Friday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Macro Ec onomics",
+        "course": "Macro Economics",
         "teacher": "Michael Hieman Simon",
         "room": "AB1RoomE 2"
       }
@@ -11931,7 +11867,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Investmen t and Portfolio Analytics",
+        "course": "Investment and Portfolio Analytics",
         "teacher": "Zehra Mukhtiar",
         "room": "AB1RoomR 11"
       },
@@ -11939,7 +11875,7 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Investmen t and Portfolio Analytics",
+        "course": "Investment and Portfolio Analytics",
         "teacher": "Zehra Mukhtiar",
         "room": "AB1RoomR 12"
       },
@@ -11947,7 +11883,7 @@
         "day": "Wednesday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Digital Assets and Cryptocurren cies; Conven tiontional and Shariah Persepective s",
+        "course": "Digital Assets and Cryptocurrencies; Conventional and Shariah Perspectives",
         "teacher": "Mushtaq Ahmed",
         "room": "AB1RoomR"
       },
@@ -11955,7 +11891,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "FinTech Product M anageme nt",
+        "course": "FinTech Product Management",
         "teacher": "Mohsin Ali",
         "room": "AB1RoomR 11"
       },
@@ -11979,7 +11915,7 @@
         "day": "Friday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Digital Assets and Crypt ocurrencie s; Conven tiontional and Shariah P ersepectiv es",
+        "course": "Digital Assets and Cryptocurrencies; Conventional and Shariah Perspectives",
         "teacher": "Mushtaq Ahmed",
         "room": null
       }
@@ -12016,7 +11952,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Sarfaraz Ahmed Bhutto",
         "room": "AB2RoomE 29"
       },
@@ -12033,7 +11969,7 @@
         "start": "3:20",
         "end": "4:10",
         "course": "Pakistan Studies",
-        "teacher": "Khushbo o Farid",
+        "teacher": "Khushboo Farid",
         "room": "AB2RoomE 29"
       },
       {
@@ -12072,7 +12008,7 @@
         "day": "Tuesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Sarfaraz Ahmed Bhutto",
         "room": "AB2RoomE 31"
       },
@@ -12090,7 +12026,7 @@
         "end": "10:40",
         "course": "Business Math – I",
         "teacher": "Muhammad Jamil",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
@@ -12098,7 +12034,7 @@
         "end": "11:35",
         "course": "Business Mathematics",
         "teacher": "Muhammad Jamil",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
@@ -12112,7 +12048,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Introductio n to Financial Accountin g",
+        "course": "Introduction to Financial Accounting",
         "teacher": "Sarfaraz Ahmed Bhutto",
         "room": "AB2RoomD 28"
       },
@@ -12129,7 +12065,7 @@
         "start": "3:20",
         "end": "4:10",
         "course": "Pakistan Studies",
-        "teacher": "Khushbo o Farid",
+        "teacher": "Khushboo Farid",
         "room": "AB2RoomD 28"
       },
       {
@@ -12270,7 +12206,7 @@
         "start": "8:55",
         "end": "9:45",
         "course": "Pakistan Studies",
-        "teacher": "Khushbo o Farid",
+        "teacher": "Khushboo Farid",
         "room": "AB2RoomD 25"
       },
       {
@@ -12346,7 +12282,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Financial Managem ent",
+        "course": "Financial Management",
         "teacher": "Aleena Fayyaz",
         "room": "AB1RoomR 12"
       },
@@ -12410,7 +12346,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Financial Managem ent",
+        "course": "Financial Management",
         "teacher": "Aleena Fayyaz",
         "room": "AB2RoomC 13"
       },
@@ -12458,7 +12394,7 @@
         "day": "Thursday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Financial Managem ent",
+        "course": "Financial Management",
         "teacher": "Aleena Fayyaz",
         "room": "AB2RoomB 9"
       }
@@ -12495,7 +12431,7 @@
         "day": "Wednesday",
         "start": "11:40",
         "end": "12:30",
-        "course": "Entrepreneursh ip",
+        "course": "Entrepreneurship",
         "teacher": "Mohsin Ali",
         "room": "AB1RoomR 12"
       }
@@ -12532,7 +12468,7 @@
         "day": "Monday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Sobia",
         "room": "AB2RoomE 34"
       },
@@ -12540,7 +12476,7 @@
         "day": "Tuesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Sobia",
         "room": "AB2RoomE 32"
       },
@@ -12689,7 +12625,7 @@
         "day": "Monday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Sobia",
         "room": "AB2RoomE 33"
       },
@@ -12721,7 +12657,7 @@
         "day": "Tuesday",
         "start": "12:35",
         "end": "1:25",
-        "course": "Programmin g Fundamen tals",
+        "course": "Programming Fundamentals",
         "teacher": "Sobia",
         "room": "AB2RoomD 25"
       },
@@ -12739,7 +12675,7 @@
         "end": "4:10",
         "course": "Anthropology",
         "teacher": "Shahnawaz Muhammad Khan",
-        "room": "AB2RoomD 27"
+        "room": "AB2, Room D27"
       },
       {
         "day": "Wednesday",
@@ -12838,7 +12774,7 @@
         "day": "Monday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Mahrukh Khan",
         "room": "AB2RoomD 23"
       },
@@ -12854,7 +12790,7 @@
         "day": "Tuesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Mahrukh Khan",
         "room": "AB2RoomD 24"
       },
@@ -12894,7 +12830,7 @@
         "day": "Wednesday",
         "start": "8:00",
         "end": "8:50",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Mahrukh Khan",
         "room": "AB2RoomD 23"
       },
@@ -13019,7 +12955,7 @@
         "day": "Tuesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Alina Arshad",
         "room": "AB2RoomE 31"
       },
@@ -13075,7 +13011,7 @@
         "day": "Wednesday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Programm ing Funda mentals",
+        "course": "Programming Fundamentals",
         "teacher": "Alina Arshad",
         "room": "AB2RoomC 19"
       },
@@ -13466,7 +13402,7 @@
         "day": "Wednesday",
         "start": "1:30",
         "end": "2:20",
-        "course": "Software Quality En gineering",
+        "course": "Software Quality Engineering",
         "teacher": "Syeda Rubab Manzar",
         "room": "AB2RoomB 9"
       },
@@ -13567,7 +13503,7 @@
         "day": "Wednesday",
         "start": "8:55",
         "end": "9:45",
-        "course": "Software Quality En gineering",
+        "course": "Software Quality Engineering",
         "teacher": "Syeda Rubab Manzar",
         "room": "AB2RoomA 8"
       },
@@ -13623,7 +13559,7 @@
         "day": "Thursday",
         "start": "2:25",
         "end": "3:15",
-        "course": "Software Quality En gineering",
+        "course": "Software Quality Engineering",
         "teacher": "Syeda Rubab Manzar",
         "room": "AB2RoomA 6"
       },
@@ -13647,7 +13583,7 @@
         "day": "Friday",
         "start": "3:20",
         "end": "4:10",
-        "course": "Software Quality En gineering",
+        "course": "Software Quality Engineering",
         "teacher": "Syeda Rubab Manzar",
         "room": "AB1RoomE 3"
       }

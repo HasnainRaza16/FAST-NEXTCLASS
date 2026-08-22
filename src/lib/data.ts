@@ -22,14 +22,29 @@ async function fetchProfile() {
   // this select to the caller's own row. Skipping the extra lookup removes
   // one full network round-trip to Supabase Auth from every page that
   // fetches the profile — which is nearly every dashboard navigation.
-  const { data } = await supabase.from("profiles").select("*").single();
+  const { data, error } = await supabase.from("profiles").select("*").single();
+  if (error) {
+    // PGRST116 = "no rows returned by .single()" — a genuinely new account
+    // that hasn't finished onboarding yet. That's a normal state, not a
+    // failure, so it's fine to return null and let the UI show its usual
+    // "add your section" prompt.
+    if (error.code === "PGRST116") return null;
+    // Any other error (auth/session hiccup, network failure, RLS
+    // misconfiguration, etc.) must NOT be silently treated as "no
+    // profile" — that previously showed up to the user as an empty
+    // dashboard or a blank-looking profile page with no explanation.
+    // Throwing here lets the error.tsx boundary show a real "something
+    // went wrong, try again" instead of a misleading empty state.
+    throw new Error(`Failed to load profile: ${error.message}`);
+  }
   return data;
 }
 export const getProfile = cache(fetchProfile);
 
 async function fetchCourses(): Promise<Course[]> {
   const supabase = await createClient();
-  const { data } = await supabase.from("courses").select("*").order("created_at");
+  const { data, error } = await supabase.from("courses").select("*").order("created_at");
+  if (error) throw new Error(`Failed to load courses: ${error.message}`);
   return (data as Course[]) ?? [];
 }
 // Cached for the common case (layout + page both need the same list in one
@@ -42,10 +57,11 @@ export const getCoursesFresh = fetchCourses;
 
 async function fetchTimetable(): Promise<TimetableEntry[]> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("timetable")
     .select("*, course:courses(*)")
     .order("start_time");
+  if (error) throw new Error(`Failed to load timetable: ${error.message}`);
   return (data as unknown as TimetableEntry[]) ?? [];
 }
 export const getTimetable = cache(fetchTimetable);
@@ -53,29 +69,31 @@ export const getTimetableFresh = fetchTimetable;
 
 async function fetchAttendance(): Promise<AttendanceRecord[]> {
   const supabase = await createClient();
-  const { data } = await supabase.from("attendance").select("*").order("date", { ascending: false });
+  const { data, error } = await supabase.from("attendance").select("*").order("date", { ascending: false });
+  if (error) throw new Error(`Failed to load attendance: ${error.message}`);
   return (data as AttendanceRecord[]) ?? [];
 }
 export const getAttendance = cache(fetchAttendance);
 
 async function fetchNotifications(): Promise<Notification[]> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("notifications")
     .select("*")
     .order("created_at", { ascending: false })
     .limit(50);
+  if (error) throw new Error(`Failed to load notifications: ${error.message}`);
   return (data as Notification[]) ?? [];
 }
 export const getNotifications = cache(fetchNotifications);
 
 async function fetchFeedback(): Promise<FeedbackItem[]> {
   const supabase = await createClient();
-  const { data } = await supabase
+  const { data, error } = await supabase
     .from("feedback")
     .select("*")
     .order("created_at", { ascending: false });
+  if (error) throw new Error(`Failed to load feedback: ${error.message}`);
   return (data as FeedbackItem[]) ?? [];
 }
 export const getFeedback = cache(fetchFeedback);
-

@@ -41,19 +41,48 @@ export function ReminderEngine() {
 
   useEffect(() => {
     let cancelled = false;
+    let retryTimeout: ReturnType<typeof setTimeout> | undefined;
 
     async function loadEntries() {
-      const { data } = await supabase.current
+      const { data, error } = await supabase.current
         .from("timetable")
         .select("*, course:courses(*)")
         .order("start_time");
-      if (!cancelled) setEntries((data as unknown as TimetableEntry[]) ?? []);
+
+      if (cancelled) return;
+
+      if (error) {
+        // A failed fetch (e.g. a transient auth/session hiccup right after
+        // the app resumes from being backgrounded) must NEVER wipe good
+        // data that's already showing — that would incorrectly look like
+        // "you have no classes." Just leave the existing state alone and
+        // quietly retry shortly instead of giving up until the next
+        // scheduled refresh.
+        console.error("ReminderEngine: failed to load timetable, keeping previous data", error);
+        retryTimeout = setTimeout(loadEntries, 10_000);
+        return;
+      }
+
+      setEntries((data as unknown as TimetableEntry[]) ?? []);
     }
 
     loadEntries();
+
+    // Re-check whenever the app becomes visible again — this is the exact
+    // moment a backgrounded/frozen mobile app resumes, and Supabase's own
+    // session may need a moment to settle before a fetch reliably succeeds,
+    // which the retry-on-error above handles if this first attempt loses
+    // that race.
+    function handleVisibility() {
+      if (document.visibilityState === "visible") loadEntries();
+    }
+    document.addEventListener("visibilitychange", handleVisibility);
+
     const refreshId = setInterval(loadEntries, REFRESH_MS);
     return () => {
       cancelled = true;
+      if (retryTimeout) clearTimeout(retryTimeout);
+      document.removeEventListener("visibilitychange", handleVisibility);
       clearInterval(refreshId);
     };
   }, []);
