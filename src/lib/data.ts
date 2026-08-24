@@ -1,6 +1,6 @@
 import { cache } from "react";
 import { createClient } from "@/lib/supabase/server";
-import { Course, TimetableEntry, AttendanceRecord, Notification, FeedbackItem } from "@/lib/types";
+import { Course, TimetableEntry, AttendanceRecord, Notification, FeedbackItem, GradeEntry } from "@/lib/types";
 export { summarizeAttendance } from "@/lib/attendance";
 
 async function fetchCurrentUser() {
@@ -97,3 +97,12 @@ async function fetchFeedback(): Promise<FeedbackItem[]> {
   return (data as FeedbackItem[]) ?? [];
 }
 export const getFeedback = cache(fetchFeedback);
+
+async function fetchGrades(): Promise<GradeEntry[]> {
+  const supabase = await createClient();
+  const { data, error } = await supabase.from("grades").select("*").order("created_at");
+  if (error) throw new Error(`Failed to load grades: ${error.message}`);
+  return (data as GradeEntry[]) ?? [];
+}
+export const getGrades = cache(fetchGrades);
+export const getGradesFresh = fetchGrades;

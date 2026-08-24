@@ -11,6 +11,7 @@ import {
   LogOut,
   CalendarClock,
   MessageSquarePlus,
+  GraduationCap,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { createClient } from "@/lib/supabase/client";
@@ -59,6 +60,18 @@ export function DesktopSidebar() {
             </Link>
           );
         })}
+        <Link
+          href="/dashboard/gpa"
+          className={cn(
+            "flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium transition-colors",
+            pathname === "/dashboard/gpa"
+              ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
+              : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800"
+          )}
+        >
+          <GraduationCap className="h-4 w-4" />
+          GPA
+        </Link>
         <Link
           href="/dashboard/search"
           className={cn(

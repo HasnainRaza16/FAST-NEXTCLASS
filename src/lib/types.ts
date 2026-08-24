@@ -121,3 +121,33 @@ export interface FeedbackItem {
   message: string;
   created_at: string;
 }
+
+// FAST-NUCES official BS/BBA letter grades (nu.edu.pk/Student/Grading).
+// CR, I, and W are excluded — they don't carry grade points and aren't
+// used in SGPA/CGPA at FAST.
+export const LETTER_GRADES = [
+  "A+",
+  "A",
+  "A-",
+  "B+",
+  "B",
+  "B-",
+  "C+",
+  "C",
+  "C-",
+  "D+",
+  "D",
+  "F",
+  "FA",
+] as const;
+export type LetterGrade = (typeof LETTER_GRADES)[number];
+
+export interface GradeEntry {
+  id: string;
+  user_id: string;
+  course_name: string;
+  credit_hours: number;
+  letter_grade: LetterGrade;
+  semester_label: string;
+  created_at: string;
+}

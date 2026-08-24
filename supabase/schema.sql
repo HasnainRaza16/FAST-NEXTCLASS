@@ -304,3 +304,30 @@ drop trigger if exists on_auth_user_created on auth.users;
 create trigger on_auth_user_created
   after insert on auth.users
   for each row execute procedure public.handle_new_user();
+
+-- ─────────────────────────────────────────────
+-- GPA calculator (additive migration)
+--
+-- Independent of `courses` on purpose: GPA entries cover every semester a
+-- student has completed, not just the one currently tracked for
+-- attendance/timetable, and a completed course's credit hours/final grade
+-- don't change once entered.
+-- ─────────────────────────────────────────────
+create table if not exists public.grades (
+  id uuid primary key default uuid_generate_v4(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  course_name text not null check (char_length(course_name) <= 200),
+  credit_hours numeric(3,1) not null check (credit_hours > 0 and credit_hours <= 6),
+  letter_grade text not null check (letter_grade in
+    ('A+','A','A-','B+','B','B-','C+','C','C-','D+','D','F','FA')),
+  semester_label text not null check (char_length(semester_label) <= 60),
+  created_at timestamptz not null default now()
+);
+
+alter table public.grades enable row level security;
+
+drop policy if exists "grades: owner all" on public.grades;
+create policy "grades: owner all" on public.grades for all
+  using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+create index if not exists grades_user_semester_idx on public.grades (user_id, semester_label);
