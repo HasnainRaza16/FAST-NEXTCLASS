@@ -6097,24 +6097,24 @@
         "day": "Thursday",
         "start": "9:50",
         "end": "10:40",
-        "course": "G(Dern. eUrsamtivaen )AI",
-        "teacher": "@D rA. UB1smRoaonm",
+        "course": "Generative AI",
+        "teacher": "Dr. Usman",
         "room": "AB1RoomE 4"
       },
       {
         "day": "Thursday",
         "start": "11:40",
         "end": "12:30",
-        "course": "D(Raatab iaS cTieanbcaessum)",
-        "teacher": "@R aAbBia1 RTaoboamsEsu 3m",
+        "course": "Data Science",
+        "teacher": "Rabia Tabassum",
         "room": "AB1RoomE 5"
       },
       {
         "day": "Thursday",
         "start": "1:30",
         "end": "2:20",
-        "course": "RIneteclolimgemnecender S(Jyaswtewmasd Ahmed",
-        "teacher": "SShyaemd sZi",
+        "course": "Recommender Systems",
+        "teacher": "Jawwad Ahmed Shamsi",
         "room": "AB1RoomE 6"
       }
     ]

@@ -12,6 +12,7 @@ import {
   CalendarClock,
   MessageSquarePlus,
   GraduationCap,
+  DoorOpen,
   MoreHorizontal,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -25,11 +26,23 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 // Links that live in the desktop sidebar but don't fit as their own icon
-// in the 5-slot mobile bottom bar — grouped under mobile's "More" tab
-// instead so they're still reachable on phones.
+// in the mobile bottom bar — grouped under mobile's "More" tab instead so
+// they're still reachable on phones.
 const MORE_ITEMS = [
   { href: "/dashboard/gpa", label: "GPA", icon: GraduationCap },
   { href: "/dashboard/search", label: "Search", icon: Search },
+  { href: "/dashboard/free-rooms", label: "Free Rooms", icon: DoorOpen },
+  { href: "/dashboard/feedback", label: "Feedback", icon: MessageSquarePlus },
+];
+
+// Every link shown individually in the desktop sidebar, beyond the core 4
+// nav items below. Kept as one list so desktop and the mobile "More"
+// dropdown can't drift out of sync with each other.
+const SIDEBAR_EXTRA_ITEMS = [
+  { href: "/dashboard/gpa", label: "GPA", icon: GraduationCap },
+  { href: "/dashboard/search", label: "Search", icon: Search },
+  { href: "/dashboard/free-rooms", label: "Free Rooms", icon: DoorOpen },
+  { href: "/dashboard/profile", label: "Profile", icon: User },
   { href: "/dashboard/feedback", label: "Feedback", icon: MessageSquarePlus },
 ];
 
@@ -39,6 +52,7 @@ const NAV_ITEMS = [
   { href: "/dashboard/attendance", label: "Attendance", icon: TrendingUp },
   { href: "/dashboard/notifications", label: "Alerts", icon: Bell },
 ];
+
 export function DesktopSidebar() {
   const pathname = usePathname();
   const router = useRouter();
@@ -76,54 +90,25 @@ export function DesktopSidebar() {
             </Link>
           );
         })}
-        <Link
-          href="/dashboard/gpa"
-          className={cn(
-            "flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium transition-colors",
-            pathname === "/dashboard/gpa"
-              ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-              : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800"
-          )}
-        >
-          <GraduationCap className="h-4 w-4" />
-          GPA
-        </Link>
-        <Link
-          href="/dashboard/search"
-          className={cn(
-            "flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium transition-colors",
-            pathname === "/dashboard/search"
-              ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-              : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800"
-          )}
-        >
-          <Search className="h-4 w-4" />
-          Search
-        </Link>
-        <Link
-          href="/dashboard/profile"
-          className={cn(
-            "flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium transition-colors",
-            pathname === "/dashboard/profile"
-              ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-              : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800"
-          )}
-        >
-          <User className="h-4 w-4" />
-          Profile
-        </Link>
-        <Link
-          href="/dashboard/feedback"
-          className={cn(
-            "flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium transition-colors",
-            pathname === "/dashboard/feedback"
-              ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
-              : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800"
-          )}
-        >
-          <MessageSquarePlus className="h-4 w-4" />
-          Feedback
-        </Link>
+        {SIDEBAR_EXTRA_ITEMS.map((item) => {
+          const active = pathname === item.href;
+          const Icon = item.icon;
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={cn(
+                "flex items-center gap-3 rounded-xl px-3 py-2 text-sm font-medium transition-colors",
+                active
+                  ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
+                  : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800"
+              )}
+            >
+              <Icon className="h-4 w-4" />
+              {item.label}
+            </Link>
+          );
+        })}
       </nav>
       <div className="flex items-center justify-between px-2">
         <ThemeToggle />
