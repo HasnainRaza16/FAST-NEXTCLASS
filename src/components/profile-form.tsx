@@ -10,6 +10,7 @@ import { Switch } from "@/components/ui/switch";
 import { Profile } from "@/lib/types";
 import { getReminderPrefs, setReminderPrefs, requestNotificationPermission } from "@/components/reminder-engine";
 import { autoAssignTimetable } from "@/lib/auto-assign";
+import { InstallApp } from "@/components/install-app";
 
 const REMINDER_OPTIONS = [5, 10, 15, 30];
 
@@ -104,6 +105,8 @@ export function ProfileForm({ initialProfile }: { initialProfile: Profile | null
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-xl font-semibold">Profile</h1>
+
+      <InstallApp />
 
       <Card>
         <CardHeader>

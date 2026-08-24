@@ -12,10 +12,26 @@ import {
   CalendarClock,
   MessageSquarePlus,
   GraduationCap,
+  MoreHorizontal,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { createClient } from "@/lib/supabase/client";
 import { ThemeToggle } from "@/components/theme-toggle";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
+
+// Links that live in the desktop sidebar but don't fit as their own icon
+// in the 5-slot mobile bottom bar — grouped under mobile's "More" tab
+// instead so they're still reachable on phones.
+const MORE_ITEMS = [
+  { href: "/dashboard/gpa", label: "GPA", icon: GraduationCap },
+  { href: "/dashboard/search", label: "Search", icon: Search },
+  { href: "/dashboard/feedback", label: "Feedback", icon: MessageSquarePlus },
+];
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Home", icon: LayoutDashboard },
@@ -125,6 +141,8 @@ export function DesktopSidebar() {
 
 export function MobileBottomNav() {
   const pathname = usePathname();
+  const onMoreItem = MORE_ITEMS.some((item) => pathname === item.href);
+
   return (
     <nav className="fixed inset-x-0 bottom-0 z-40 flex border-t border-neutral-200 bg-white/95 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/95 md:hidden">
       {NAV_ITEMS.map((item) => {
@@ -144,6 +162,30 @@ export function MobileBottomNav() {
           </Link>
         );
       })}
+      <DropdownMenu>
+        <DropdownMenuTrigger
+          className={cn(
+            "flex flex-1 flex-col items-center gap-0.5 py-2.5 text-[11px] font-medium outline-none",
+            onMoreItem ? "text-neutral-900 dark:text-white" : "text-neutral-400"
+          )}
+        >
+          <MoreHorizontal className="h-5 w-5" />
+          More
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" side="top">
+          {MORE_ITEMS.map((item) => {
+            const Icon = item.icon;
+            return (
+              <DropdownMenuItem key={item.href} asChild>
+                <Link href={item.href}>
+                  <Icon className="h-4 w-4" />
+                  {item.label}
+                </Link>
+              </DropdownMenuItem>
+            );
+          })}
+        </DropdownMenuContent>
+      </DropdownMenu>
       <Link
         href="/dashboard/profile"
         className={cn(
