@@ -1,12 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Plus, Trash2, AlertTriangle, Trophy } from "lucide-react";
+import { Plus, Trash2, AlertTriangle, Trophy, Search } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { GradeEntry, LetterGrade } from "@/lib/types";
+import { Course, GradeEntry, LetterGrade } from "@/lib/types";
 import {
   computeSemesterGpas,
   computeCgpa,
@@ -25,7 +25,15 @@ function getStoredProgram(): Program {
   return raw === "BS" || raw === "MBA" || raw === "MS" || raw === "PhD" ? raw : "BS";
 }
 
-export function GpaCalculator({ initialGrades }: { initialGrades: GradeEntry[] }) {
+interface GpaCalculatorProps {
+  initialGrades: GradeEntry[];
+  /** The student's own courses (auto-filled from their section's timetable on signup/login), offered as quick-pick suggestions so they don't have to retype a course name that's already on their schedule. */
+  courses: Course[];
+  /** Profile's semester field, used to prefill the "Semester" input — still freely editable, since GPA entries can belong to a past semester too. */
+  defaultSemesterLabel: string;
+}
+
+export function GpaCalculator({ initialGrades, courses, defaultSemesterLabel }: GpaCalculatorProps) {
   const router = useRouter();
   const supabase = createClient();
   const [grades, setGrades] = useState(initialGrades);
@@ -50,7 +58,46 @@ export function GpaCalculator({ initialGrades }: { initialGrades: GradeEntry[] }
   const [courseName, setCourseName] = useState("");
   const [creditHours, setCreditHours] = useState("3");
   const [letterGrade, setLetterGrade] = useState<LetterGrade>("A");
-  const [semesterLabel, setSemesterLabel] = useState("");
+  const [semesterLabel, setSemesterLabel] = useState(defaultSemesterLabel);
+
+  // Quick-pick list of the student's own timetable courses — deduped by
+  // name (a course can appear once per weekly class slot in `courses`,
+  // e.g. a lecture + a lab section sharing the same course_name).
+  const uniqueCourses = useMemo(() => {
+    const seen = new Set<string>();
+    const result: Course[] = [];
+    for (const c of courses) {
+      const key = c.course_name.trim().toLowerCase();
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      result.push(c);
+    }
+    return result.sort((a, b) => a.course_name.localeCompare(b.course_name));
+  }, [courses]);
+
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const courseFieldRef = useRef<HTMLDivElement>(null);
+
+  const filteredCourses = useMemo(() => {
+    const q = courseName.trim().toLowerCase();
+    const pool = q ? uniqueCourses.filter((c) => c.course_name.toLowerCase().includes(q)) : uniqueCourses;
+    return pool.slice(0, 8);
+  }, [uniqueCourses, courseName]);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (courseFieldRef.current && !courseFieldRef.current.contains(e.target as Node)) {
+        setShowSuggestions(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  function pickCourse(course: Course) {
+    setCourseName(course.course_name);
+    setShowSuggestions(false);
+  }
 
   const semesters = computeSemesterGpas(grades).sort((a, b) =>
     a.semester_label.localeCompare(b.semester_label)
@@ -166,14 +213,56 @@ export function GpaCalculator({ initialGrades }: { initialGrades: GradeEntry[] }
       <Card>
         <CardHeader>
           <CardTitle>Add a course</CardTitle>
+          {uniqueCourses.length > 0 && (
+            <CardDescription>
+              Tap the course field to pick from your {uniqueCourses.length} timetable courses — no retyping.
+            </CardDescription>
+          )}
         </CardHeader>
         <CardContent className="flex flex-col gap-3">
           <div className="grid gap-3 sm:grid-cols-2">
-            <Input
-              placeholder="Course name (e.g. Data Structures)"
-              value={courseName}
-              onChange={(e) => setCourseName(e.target.value)}
-            />
+            <div ref={courseFieldRef} className="relative">
+              <div className="relative">
+                <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-neutral-400" />
+                <Input
+                  className="pl-9"
+                  placeholder={
+                    uniqueCourses.length > 0 ? "Search your courses or type a name" : "Course name (e.g. Data Structures)"
+                  }
+                  value={courseName}
+                  onChange={(e) => {
+                    setCourseName(e.target.value);
+                    setShowSuggestions(true);
+                  }}
+                  onFocus={() => setShowSuggestions(true)}
+                />
+              </div>
+              {showSuggestions && filteredCourses.length > 0 && (
+                <div className="absolute z-10 mt-1 w-full overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
+                  {filteredCourses.map((c) => (
+                    <button
+                      key={c.id}
+                      type="button"
+                      onMouseDown={(e) => {
+                        // onMouseDown (not onClick) fires before the input's
+                        // onBlur/click-outside handler, so the pick registers
+                        // instead of the dropdown closing first.
+                        e.preventDefault();
+                        pickCourse(c);
+                      }}
+                      className="flex w-full flex-col items-start gap-0.5 px-3 py-2 text-left text-sm hover:bg-neutral-100 dark:hover:bg-neutral-800"
+                    >
+                      <span className="font-medium">{c.course_name}</span>
+                      {(c.course_code || c.teacher_name) && (
+                        <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                          {[c.course_code, c.teacher_name].filter(Boolean).join(" · ")}
+                        </span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
             <Input
               placeholder="Semester (e.g. Fall 2026)"
               value={semesterLabel}

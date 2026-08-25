@@ -13,6 +13,7 @@ import {
   MessageSquarePlus,
   GraduationCap,
   DoorOpen,
+  BookOpen,
   MoreHorizontal,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -32,6 +33,7 @@ const MORE_ITEMS = [
   { href: "/dashboard/gpa", label: "GPA", icon: GraduationCap },
   { href: "/dashboard/search", label: "Search", icon: Search },
   { href: "/dashboard/free-rooms", label: "Free Rooms", icon: DoorOpen },
+  { href: "/dashboard/notifications", label: "Alerts", icon: Bell },
   { href: "/dashboard/feedback", label: "Feedback", icon: MessageSquarePlus },
 ];
 
@@ -42,16 +44,24 @@ const SIDEBAR_EXTRA_ITEMS = [
   { href: "/dashboard/gpa", label: "GPA", icon: GraduationCap },
   { href: "/dashboard/search", label: "Search", icon: Search },
   { href: "/dashboard/free-rooms", label: "Free Rooms", icon: DoorOpen },
+  { href: "/dashboard/notifications", label: "Alerts", icon: Bell },
   { href: "/dashboard/profile", label: "Profile", icon: User },
   { href: "/dashboard/feedback", label: "Feedback", icon: MessageSquarePlus },
 ];
 
+// Materials has sub-routes (/dashboard/materials/[semester]), so its "active"
+// state needs a prefix match instead of an exact one — everything else in
+// NAV_ITEMS is a single flat route and uses an exact match.
 const NAV_ITEMS = [
-  { href: "/dashboard", label: "Home", icon: LayoutDashboard },
-  { href: "/dashboard/schedule", label: "Schedule", icon: CalendarDays },
-  { href: "/dashboard/attendance", label: "Attendance", icon: TrendingUp },
-  { href: "/dashboard/notifications", label: "Alerts", icon: Bell },
+  { href: "/dashboard", label: "Home", icon: LayoutDashboard, matchPrefix: false },
+  { href: "/dashboard/schedule", label: "Schedule", icon: CalendarDays, matchPrefix: false },
+  { href: "/dashboard/materials", label: "Materials", icon: BookOpen, matchPrefix: true },
+  { href: "/dashboard/attendance", label: "Attendance", icon: TrendingUp, matchPrefix: false },
 ];
+
+function isActive(pathname: string, item: { href: string; matchPrefix: boolean }) {
+  return item.matchPrefix ? pathname === item.href || pathname.startsWith(item.href + "/") : pathname === item.href;
+}
 
 export function DesktopSidebar() {
   const pathname = usePathname();
@@ -72,7 +82,7 @@ export function DesktopSidebar() {
       </div>
       <nav className="flex flex-1 flex-col gap-1">
         {NAV_ITEMS.map((item) => {
-          const active = pathname === item.href;
+          const active = isActive(pathname, item);
           const Icon = item.icon;
           return (
             <Link
@@ -131,7 +141,7 @@ export function MobileBottomNav() {
   return (
     <nav className="fixed inset-x-0 bottom-0 z-40 flex border-t border-neutral-200 bg-white/95 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/95 md:hidden">
       {NAV_ITEMS.map((item) => {
-        const active = pathname === item.href;
+        const active = isActive(pathname, item);
         const Icon = item.icon;
         return (
           <Link

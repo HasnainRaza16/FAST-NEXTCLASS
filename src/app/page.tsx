@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CalendarClock, BellRing, TrendingUp } from "lucide-react";
+import { CalendarClock, BellRing, TrendingUp, BookOpen } from "lucide-react";
 import { LinkedinIcon } from "@/components/linkedin-icon";
 
 const DEVELOPER_LINKEDIN_URL = "https://www.linkedin.com/in/hasnain-raza-15a7872b7";
@@ -51,7 +51,7 @@ export default function LandingPage() {
           </Button>
         </div>
 
-        <div className="mt-16 grid gap-4 sm:grid-cols-3">
+        <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Card>
             <CardContent className="pt-6 text-left">
               <CalendarClock className="mb-3 h-6 w-6" />
@@ -76,6 +76,15 @@ export default function LandingPage() {
               <h3 className="font-semibold">Attendance tracking</h3>
               <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
                 Automatic percentages with low-attendance warnings.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="pt-6 text-left">
+              <BookOpen className="mb-3 h-6 w-6" />
+              <h3 className="font-semibold">Course materials</h3>
+              <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
+                Slides, past papers, and quizzes for every subject, semester-wise.
               </p>
             </CardContent>
           </Card>
