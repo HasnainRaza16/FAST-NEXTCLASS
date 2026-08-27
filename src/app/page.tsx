@@ -39,8 +39,9 @@ export default function LandingPage() {
           Your personal academic assistant
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-neutral-500 dark:text-neutral-400">
-          Enter your timetable once. FAST NextClass tells you what&apos;s next, where to go,
-          how much time you have, and keeps your attendance on track.
+         Sign up with your section and your timetable fills in automatically.
+FAST NextClass tells you what&apos;s next, where to go, how much time you have,
+and keeps your attendance on track.
         </p>
         <div className="mt-8 flex justify-center gap-3">
           <Button size="lg" asChild>

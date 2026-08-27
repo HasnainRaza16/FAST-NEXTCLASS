@@ -151,3 +151,23 @@ export interface GradeEntry {
   semester_label: string;
   created_at: string;
 }
+
+export const PREP_TYPES = ["quiz", "mid", "final"] as const;
+export type PrepType = (typeof PREP_TYPES)[number];
+
+export const PREP_SESSION_STATUSES = ["active", "completed", "cancelled"] as const;
+export type PrepSessionStatus = (typeof PREP_SESSION_STATUSES)[number];
+
+export interface PrepSession {
+  id: string;
+  user_id: string;
+  semester: number;
+  subject: string;
+  prep_type: PrepType;
+  duration_seconds: number;
+  status: PrepSessionStatus;
+  started_at: string;
+  expires_at: string;
+  ended_at: string | null;
+  created_at: string;
+}

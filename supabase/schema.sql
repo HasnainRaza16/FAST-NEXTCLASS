@@ -331,3 +331,36 @@ create policy "grades: owner all" on public.grades for all
   using (auth.uid() = user_id) with check (auth.uid() = user_id);
 
 create index if not exists grades_user_semester_idx on public.grades (user_id, semester_label);
+
+-- ─────────────────────────────────────────────
+-- Exam prep sessions (additive migration)
+--
+-- Tracks a timed, locked practice session against real past-paper
+-- material (Quiz / Midterm / Final prep). "Locked" means: if the student
+-- backgrounds the tab, navigates away, or closes the browser before the
+-- timer runs out, the session is marked 'cancelled' — they start a fresh
+-- one next time rather than resuming. This is intentionally simple: no
+-- resume state, no partial credit, just an honest countdown.
+-- ─────────────────────────────────────────────
+create table if not exists public.prep_sessions (
+  id uuid primary key default uuid_generate_v4(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  semester integer not null check (semester between 1 and 5),
+  subject text not null check (char_length(subject) <= 200),
+  prep_type text not null check (prep_type in ('quiz', 'mid', 'final')),
+  duration_seconds integer not null check (duration_seconds > 0),
+  status text not null default 'active' check (status in ('active', 'completed', 'cancelled')),
+  started_at timestamptz not null default now(),
+  expires_at timestamptz not null,
+  ended_at timestamptz,
+  created_at timestamptz not null default now()
+);
+
+alter table public.prep_sessions enable row level security;
+
+drop policy if exists "prep_sessions: owner all" on public.prep_sessions;
+create policy "prep_sessions: owner all" on public.prep_sessions for all
+  using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+create index if not exists prep_sessions_user_lookup_idx
+  on public.prep_sessions (user_id, subject, prep_type, status);

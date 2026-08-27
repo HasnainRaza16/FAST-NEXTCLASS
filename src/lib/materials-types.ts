@@ -1,5 +1,7 @@
 export type MaterialCategory =
   | "Slides"
+  | "Midterm Papers"
+  | "Final Papers"
   | "Past Papers"
   | "Quizzes"
   | "Assignments"
@@ -58,6 +60,8 @@ export interface MaterialsSummary {
 // Display order for category chips — most exam-relevant first.
 export const CATEGORY_ORDER: MaterialCategory[] = [
   "Slides",
+  "Midterm Papers",
+  "Final Papers",
   "Past Papers",
   "Quizzes",
   "Assignments",
