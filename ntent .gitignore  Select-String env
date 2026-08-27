@@ -1,0 +1,27 @@
+[33mcommit c6c72c9624a1151fc857a670a71acf19e9dc53de[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Hasnain Raza <bhaihassi317@example.com>
+Date:   Fri Aug 28 01:36:46 2026 +0500
+
+    Add Exam Prep, update-available prompt, and homepage copy fix
+
+ README_APPLY_THESE_CHANGES.txt                     | 203 [32m++++++++++[m[31m--------[m
+ data/materials/semester-1.json                     |   2 [32m+[m[31m-[m
+ data/materials/semester-2.json                     |   2 [32m+[m[31m-[m
+ data/materials/semester-3.json                     |   2 [32m+[m[31m-[m
+ data/materials/semester-4.json                     |   2 [32m+[m[31m-[m
+ data/materials/semester-5.json                     |   2 [32m+[m[31m-[m
+ data/materials/summary.json                        |   2 [32m+[m[31m-[m
+ src/app/api/prep/cancel/route.ts                   |  40 [32m++++[m
+ src/app/api/prep/materials/route.ts                |  19 [32m++[m
+ src/app/dashboard/materials/page.tsx               |  80 [32m+++++[m[31m--[m
+ src/app/dashboard/prep/[type]/page.tsx             |  40 [32m++++[m
+ .../dashboard/prep/[type]/session/[id]/page.tsx    |  41 [32m++++[m
+ src/app/page.tsx                                   |   5 [32m+[m[31m-[m
+ src/components/prep-picker.tsx                     | 229 [32m+++++++++++++++++++++[m
+ src/components/prep-session-runner.tsx             | 219 [32m++++++++++++++++++++[m
+ src/components/service-worker-register.tsx         | 100 [32m++++++++[m[31m-[m
+ src/lib/materials-types.ts                         |   4 [32m+[m
+ src/lib/prep.ts                                    |  75 [32m+++++++[m
+ src/lib/types.ts                                   |  20 [32m++[m
+ supabase/schema.sql                                |  33 [32m+++[m
+ 20 files changed, 1003 insertions(+), 117 deletions(-)
