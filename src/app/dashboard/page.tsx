@@ -27,12 +27,15 @@ export default async function DashboardHome() {
   let courses = initialCourses;
   let assignResult: AutoAssignResult | null = null;
 
-  // One-time backfill: brand-new accounts and pre-existing accounts that
-  // don't have a timetable yet both land here. If a section is set but the
-  // student has no classes, load their section's timetable automatically.
-  // Idempotent — once this succeeds, entries.length > 0 and it never runs
-  // again for this student.
-  if (entries.length === 0 && profile?.section) {
+  // Runs on every dashboard load, not just for brand-new accounts with no
+  // classes yet. autoAssignTimetable() is idempotent — it returns
+  // "unchanged" (a single cheap read, no writes) when the student's
+  // auto-assigned rows already match the catalog — so this is safe to call
+  // unconditionally. This is what lets a catalog correction (room/time/
+  // teacher fix in data/timetable_data.json) or a section change reach a
+  // student who already has a timetable, instead of only ever firing once
+  // per account on their very first empty-timetable visit.
+  if (profile?.section) {
     assignResult = await autoAssignTimetable();
     if (assignResult.status === "ok") {
       [entries, courses] = await Promise.all([getTimetableFresh(), getCoursesFresh()]);

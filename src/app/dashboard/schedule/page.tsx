@@ -13,13 +13,16 @@ export default async function SchedulePage() {
   let courses = initialCourses;
   let noTimetableForSection: string | null = null;
 
-  // Covers a student landing on Schedule directly (rather than Dashboard
-  // home) before their timetable has ever been auto-loaded.
-  if (entries.length === 0 && profile?.section) {
+  // Runs on every visit, not just before the student's timetable has ever
+  // been auto-loaded. autoAssignTimetable() is idempotent (a single cheap
+  // "unchanged" read when nothing's different), so this safely picks up
+  // catalog corrections or a section change for students who already have
+  // a timetable, not just brand-new ones landing on Schedule directly.
+  if (profile?.section) {
     const result = await autoAssignTimetable();
     if (result.status === "ok") {
       [entries, courses] = await Promise.all([getTimetableFresh(), getCoursesFresh()]);
-    } else if (result.status === "not_found") {
+    } else if (result.status === "not_found" && entries.length === 0) {
       noTimetableForSection = result.section;
     }
   }
