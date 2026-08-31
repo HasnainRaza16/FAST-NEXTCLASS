@@ -11,15 +11,32 @@ export type AutoAssignResult =
   | { status: "unchanged" }
   | { status: "error"; message: string };
 
+// A content fingerprint for one class slot — day/time/course/teacher/room.
+// Used to detect when the catalog's data for a section has changed even
+// though the section name itself hasn't (e.g. a room or teacher swap, or a
+// time correction), so already-onboarded students still pick it up.
+function classSignature(c: {
+  day: string;
+  start_time: string;
+  end_time: string;
+  course_name: string;
+  teacher_name: string | null;
+  room_number: string | null;
+}): string {
+  return [c.day, c.start_time, c.end_time, c.course_name, c.teacher_name ?? "", c.room_number ?? ""].join("|");
+}
+
 /**
  * Loads the current user's profile (semester + section), matches it against
  * the existing timetable catalog (data/timetable_data.json), and makes sure
  * the student's `courses` + `timetable` rows reflect it — without ever
  * touching rows the student added manually (`is_auto_assigned = false`).
  *
- * Idempotent: calling this repeatedly for the same section is a no-op after
- * the first successful run. If the student's section has changed, the old
- * auto-assigned timetable rows are replaced; their manual entries, notes,
+ * Idempotent: calling this repeatedly is a no-op once the student's
+ * auto-assigned rows already match what the catalog says today. If the
+ * student's section changes, OR the catalog's data for their existing
+ * section changes (a class's time/room/teacher gets corrected), the old
+ * auto-assigned timetable rows are replaced; manual entries, notes,
  * assignments, and attendance history are never deleted.
  *
  * Uses the authenticated user's own session (RLS-scoped) — no service-role
@@ -49,54 +66,108 @@ export async function autoAssignTimetable(): Promise<AutoAssignResult> {
   const classes = getUsableClassesForSection(section);
   if (classes.length === 0) return { status: "not_found", section };
 
-  // Idempotency check: if every auto-assigned timetable row this student
-  // already has belongs to this exact section, there's nothing to do.
+  const targetSignatures = new Set(classes.map(classSignature));
+
+  // Fetch this student's existing auto-assigned timetable rows with enough
+  // joined course info (course_name, teacher_name) to compare content, not
+  // just section name.
   const { data: existingAuto, error: existingAutoError } = await supabase
     .from("timetable")
-    .select("id, section")
+    .select("id, section, day, start_time, end_time, room_number, course:courses(course_name, teacher_name)")
     .eq("user_id", user.id)
     .eq("is_auto_assigned", true);
   if (existingAutoError) return { status: "error", message: existingAutoError.message };
 
-  const alreadyOnThisSection =
-    (existingAuto?.length ?? 0) > 0 && existingAuto!.every((r) => r.section === section);
-  if (alreadyOnThisSection) return { status: "unchanged" };
+  type ExistingAutoRow = {
+    id: string;
+    section: string;
+    day: string;
+    start_time: string;
+    end_time: string;
+    room_number: string | null;
+    course: { course_name: string; teacher_name: string | null } | { course_name: string; teacher_name: string | null }[] | null;
+  };
 
-  // Section changed (or first run with stray auto rows from an old
-  // section): drop the stale auto-assigned timetable rows only. This never
-  // touches manual entries, and it does not delete the underlying course
-  // rows (attendance/notes/assignments reference courses, not timetable
-  // rows, so this preserves the student's history).
-  const staleIds = (existingAuto ?? []).filter((r) => r.section !== section).map((r) => r.id);
+  const existingSignatures = new Set(
+    ((existingAuto ?? []) as ExistingAutoRow[]).map((r) => {
+      const course = Array.isArray(r.course) ? r.course[0] : r.course;
+      return classSignature({
+        day: r.day,
+        start_time: r.start_time,
+        end_time: r.end_time,
+        course_name: course?.course_name ?? "",
+        teacher_name: course?.teacher_name ?? null,
+        room_number: r.room_number,
+      });
+    })
+  );
+
+  // Idempotency check: skip the resync only if the student is already on
+  // this exact section AND every class slot matches what the catalog says
+  // today. This is what makes edits to data/timetable_data.json — a time,
+  // room, or teacher correction for a section students are already on —
+  // propagate to those students instead of only affecting brand-new
+  // signups.
+  const sameSection = (existingAuto?.length ?? 0) > 0 && existingAuto!.every((r) => r.section === section);
+  const sameContent =
+    sameSection &&
+    targetSignatures.size === existingSignatures.size &&
+    [...targetSignatures].every((sig) => existingSignatures.has(sig));
+  if (sameContent) return { status: "unchanged" };
+
+  // Section changed, or the section stayed the same but the catalog's data
+  // for it changed: drop all of this student's auto-assigned timetable rows
+  // and rebuild them fresh. This never touches manual entries
+  // (is_auto_assigned = false), and it does not delete the underlying
+  // course rows (attendance/notes/assignments reference courses, not
+  // timetable rows, so this preserves the student's history).
+  const staleIds = (existingAuto ?? []).map((r) => r.id);
   if (staleIds.length > 0) {
     const { error: deleteError } = await supabase.from("timetable").delete().in("id", staleIds);
     if (deleteError) return { status: "error", message: deleteError.message };
   }
 
   // Ensure a course row exists per unique course name (reusing this
-  // student's existing auto-assigned course rows instead of duplicating).
+  // student's existing auto-assigned course rows instead of duplicating),
+  // and keep teacher_name in sync if the catalog corrected it.
   const uniqueCourseNames = [...new Set(classes.map((c) => c.course_name))];
 
   const { data: existingCourses, error: existingCoursesError } = await supabase
     .from("courses")
-    .select("id, course_name")
+    .select("id, course_name, teacher_name")
     .eq("user_id", user.id)
     .eq("is_auto_assigned", true);
   if (existingCoursesError) return { status: "error", message: existingCoursesError.message };
 
   const courseIdByName = new Map<string, string>();
-  for (const row of existingCourses ?? []) courseIdByName.set(row.course_name, row.id);
+  const courseTeacherByName = new Map<string, string | null>();
+  for (const row of existingCourses ?? []) {
+    courseIdByName.set(row.course_name, row.id);
+    courseTeacherByName.set(row.course_name, row.teacher_name);
+  }
 
   let colorIdx = courseIdByName.size;
   for (const name of uniqueCourseNames) {
-    if (courseIdByName.has(name)) continue;
     const sample = classes.find((c) => c.course_name === name);
+    const targetTeacher = sample?.teacher_name ?? null;
+
+    if (courseIdByName.has(name)) {
+      if (courseTeacherByName.get(name) !== targetTeacher) {
+        const { error: updateError } = await supabase
+          .from("courses")
+          .update({ teacher_name: targetTeacher })
+          .eq("id", courseIdByName.get(name)!);
+        if (updateError) return { status: "error", message: updateError.message };
+      }
+      continue;
+    }
+
     const { data: inserted, error: courseInsertError } = await supabase
       .from("courses")
       .insert({
         user_id: user.id,
         course_name: name,
-        teacher_name: sample?.teacher_name ?? null,
+        teacher_name: targetTeacher,
         color_tag: COLOR_TAGS[colorIdx % COLOR_TAGS.length],
         is_auto_assigned: true,
       })
@@ -109,34 +180,17 @@ export async function autoAssignTimetable(): Promise<AutoAssignResult> {
     courseIdByName.set(name, inserted.id);
   }
 
-  // Only insert timetable rows that don't already exist for this student
-  // (covers re-running on the same section, and partial re-runs after an
-  // earlier failure).
-  const { data: currentSectionRows, error: currentSectionRowsError } = await supabase
-    .from("timetable")
-    .select("course_id, day, start_time")
-    .eq("user_id", user.id)
-    .eq("is_auto_assigned", true)
-    .eq("section", section);
-  if (currentSectionRowsError) return { status: "error", message: currentSectionRowsError.message };
-
-  const existingSlotKeys = new Set(
-    (currentSectionRows ?? []).map((r) => `${r.course_id}|${r.day}|${r.start_time}`)
-  );
-
-  const rowsToInsert = classes
-    .map((c) => ({
-      user_id: user.id,
-      course_id: courseIdByName.get(c.course_name)!,
-      day: c.day,
-      start_time: c.start_time,
-      end_time: c.end_time,
-      room_number: c.room_number,
-      section,
-      semester: profile?.semester ?? null,
-      is_auto_assigned: true,
-    }))
-    .filter((r) => !existingSlotKeys.has(`${r.course_id}|${r.day}|${r.start_time}`));
+  const rowsToInsert = classes.map((c) => ({
+    user_id: user.id,
+    course_id: courseIdByName.get(c.course_name)!,
+    day: c.day,
+    start_time: c.start_time,
+    end_time: c.end_time,
+    room_number: c.room_number,
+    section,
+    semester: profile?.semester ?? null,
+    is_auto_assigned: true,
+  }));
 
   if (rowsToInsert.length > 0) {
     const { error: insertError } = await supabase.from("timetable").insert(rowsToInsert);
