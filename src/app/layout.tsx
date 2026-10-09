@@ -1,3 +1,4 @@
+import UpdateBanner from "@/components/update-banner";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="antialiased font-sans">
+         <UpdateBanner />
         {children}
         <ServiceWorkerRegister />
       </body>
